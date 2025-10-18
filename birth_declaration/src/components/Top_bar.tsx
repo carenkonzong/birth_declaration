@@ -11,7 +11,7 @@ function Top_bar() {
           <input
             type="text"
             placeholder="search declarations..."
-            className="border border-black/10 py-3 px-10 rounded-xl"
+            className="border border-black/10 py-3 px-10 rounded-xl bg-white"
           />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Save, Send } from "lucide-react";
-import Button from "./UI Components/Button";
+import Button from "../UI Components/Button";
 
 function Bottom() {
   return (

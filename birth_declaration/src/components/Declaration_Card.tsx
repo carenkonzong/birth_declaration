@@ -14,7 +14,7 @@ function Declaration_Card(props: Props) {
   return (
     <>
       <div className="flex justify-center mt-5 ">
-        <div className="flex w-full max-w-[1216px] p-5 border rounded-2xl border-black/10 bg-[#fbfbfb] hover:-translate-1 transition-all duration-300 hover:shadow-lg ">
+        <div className="flex w-full  p-5 border rounded-2xl border-black/10 bg-[#fbfbfb] hover:-translate-1 transition-all duration-300 hover:shadow-lg ">
           <div>
             <h1 className="text-xl font-semibold mb-1">
               {firstName} {lastName}

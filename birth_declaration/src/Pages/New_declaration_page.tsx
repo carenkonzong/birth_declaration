@@ -1,8 +1,8 @@
-import New_Declaration_element from "../New_Declaration_element";
+import New_Declaration_element from "../components/New_Declaration_element";
 import Input from "../UI Components/Input";
 import Select from "../UI Components/Select";
-import Heading from "../Heading";
-import Bottom from "../Bottom";
+import Heading from "../components/Heading";
+import Bottom from "../components/Bottom";
 
 function New_declaration_page() {
   return (

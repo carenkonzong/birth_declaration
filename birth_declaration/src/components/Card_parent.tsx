@@ -5,7 +5,7 @@ function Card_parent() {
   return (
     <>
       <div className="flex justify-center pt-10 mx-5 ">
-        <div className="w-full max-w-[1216px] grid grid-cols-4 gap-5">
+        <div className="w-full  grid grid-cols-4 gap-5">
           <Card_element
             head="Total Declarations"
             total={8}
