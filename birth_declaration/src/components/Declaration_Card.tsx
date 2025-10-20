@@ -1,4 +1,5 @@
 import { Clock, Calendar } from "lucide-react";
+import { Link } from "react-router";
 
 type Props = {
   id: string;
@@ -37,9 +38,12 @@ function Declaration_Card(props: Props) {
               </div>
               {status}
             </h1>
-            <button className="border px-3 py-1 rounded-xl border-black/25 cursor-pointer hover:bg-[#23bf72] hover:text-white transition duration-300 hover:border-white">
+            <Link
+              to={"/declaration_details"}
+              className="border px-3 py-1 rounded-xl border-black/25 cursor-pointer hover:bg-[#23bf72] hover:text-white transition duration-300 hover:border-white"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
       </div>
