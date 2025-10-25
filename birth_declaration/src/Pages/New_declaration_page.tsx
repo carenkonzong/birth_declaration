@@ -3,15 +3,19 @@ import Input from "../UI Components/Input";
 import Select from "../UI Components/Select";
 import Heading from "../components/Heading";
 import Bottom from "../components/Bottom";
+import Button from "../UI Components/Button";
+import { ArrowLeft } from "lucide-react";
 
 function New_declaration_page() {
   return (
     <>
-      <Heading
-        head="Birth Declarations"
-        subhead="Manage your Submissions"
-        maxWidth="max-w-[1024px]"
-      />
+      <Heading head="Birth Declarations" subhead="Declare a new Birth">
+        <Button
+          btnHead="Back to Dashboard"
+          icon={ArrowLeft}
+          link="/dashboard"
+        />
+      </Heading>
       <New_Declaration_element
         head="Child Information"
         subhead="Basic details about the child"

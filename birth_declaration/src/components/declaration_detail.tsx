@@ -1,13 +1,22 @@
+import Heading from "./Heading";
 import Top_bar from "./Top_bar";
 import Details from "./details";
 import Head from "./head";
-import { Calendar, MapPin, User } from "lucide-react";
+import { Calendar, MapPin, User, Download } from "lucide-react";
+import Button from "../UI Components/Button";
 
 function Declaration_detail() {
   return (
     <>
       <Top_bar />
-      <div className="flex justify-center pt-10 mx-5 flex-col">
+      <div className="flex justify-center mx-5 flex-col">
+        <Heading head="Declaration details" subhead="ID: 8">
+          <Button
+            btnHead="Back to Dashboard"
+            icon={Download}
+            link="/dashboard"
+          />
+        </Heading>
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
           <Head
             head="Child Information"
@@ -45,7 +54,7 @@ function Declaration_detail() {
           <Details label="Nationality" info="Canadian" />
         </div>
       </div>
-      <div className="flex justify-center pt-10 mx-5 gap-5">
+      <div className="flex justify-center pt-10 mx-5 gap-5 mb-5">
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
           <Head head="Informant Information" />
           <Details label="Full Name" info="Catherine Anderson" />

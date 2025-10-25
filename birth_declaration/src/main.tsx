@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/declaration_details",
+        path: "/details",
         element: <Declaration_detail />,
       },
     ],
