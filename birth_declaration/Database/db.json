@@ -1,0 +1,1504 @@
+{
+  "declaration": [
+    {
+      "declarationId": "f851d473-30a1-4941-b3e7-8510ef454d62",
+      "submittedAt": "2023-01-06",
+      "status": "pending",
+      "child": {
+        "firstName": "James",
+        "lastName": "Rodriguez",
+        "gender": "Female",
+        "dateOfBirth": "2023-07-04",
+        "placeOfBirth": {
+          "hospital": "Myers Group Hospital",
+          "address": "276 Miranda Divide Apt. 492, Lake Terranceport, Venezuela"
+        }
+      },
+      "father": {
+        "firstName": "Timothy",
+        "lastName": "Carey",
+        "nationalId": "9804210776128",
+        "phone": "+237 673243319",
+        "email": "jessica60@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "John Smith",
+        "nationalId": "4198070317380",
+        "address": "227 Stacy Square Suite 933, West David, Ecuador",
+        "email": "victor28@hotmail.com",
+        "phone": "+237 666726641"
+      }
+    },
+    {
+      "declarationId": "f6fc941e-a2f3-42ba-9117-318f778314c5",
+      "submittedAt": "2024-12-11",
+      "status": "rejected",
+      "child": {
+        "firstName": "Mary",
+        "lastName": "Simpson",
+        "gender": "Male",
+        "dateOfBirth": "2022-08-26",
+        "placeOfBirth": {
+          "hospital": "Horne-Church Hospital",
+          "address": "08001 Jessica Expressway Apt. 476, Elizabethtown, Ireland"
+        }
+      },
+      "father": {
+        "firstName": "Thomas",
+        "lastName": "Kim",
+        "nationalId": "1538289957967",
+        "phone": "+237 661036750",
+        "email": "bnichols@garcia.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Katherine Burns",
+        "nationalId": "9243428197038",
+        "address": "106 Mccormick Coves, West Colleenville, Tonga",
+        "email": "chenson@miller-baxter.com",
+        "phone": "+237 652184298"
+      }
+    },
+    {
+      "declarationId": "e5e0293b-b5fd-4ccb-ba71-429dc677296a",
+      "submittedAt": "2024-06-19",
+      "status": "pending",
+      "child": {
+        "firstName": "William",
+        "lastName": "Levine",
+        "gender": "Female",
+        "dateOfBirth": "2023-08-28",
+        "placeOfBirth": {
+          "hospital": "Byrd, Hale and Herrera Hospital",
+          "address": "353 Jennifer Curve Suite 930, Anthonymouth, Ireland"
+        }
+      },
+      "father": {
+        "firstName": "Michael",
+        "lastName": "Thomas",
+        "nationalId": "3708911947896",
+        "phone": "+237 694904983",
+        "email": "georgefoster@edwards-sutton.org"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Tara Villarreal",
+        "nationalId": "7919977786570",
+        "address": "382 Justin Glens, Lake Crystalmouth, Uganda",
+        "email": "jennifer37@miller.com",
+        "phone": "+237 660019610"
+      }
+    },
+    {
+      "declarationId": "7347e91d-c7f8-4ac6-8971-fa736cf1c1b8",
+      "submittedAt": "2023-09-23",
+      "status": "pending",
+      "child": {
+        "firstName": "Beth",
+        "lastName": "Contreras",
+        "gender": "Female",
+        "dateOfBirth": "2024-04-14",
+        "placeOfBirth": {
+          "hospital": "Kemp-Collins Hospital",
+          "address": "4088 Jared Summit, Romanview, Brazil"
+        }
+      },
+      "father": {
+        "firstName": "Kyle",
+        "lastName": "James",
+        "nationalId": "7037806608952",
+        "phone": "+237 653836129",
+        "email": "mitchellsheila@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Juan Moore",
+        "nationalId": "9405175780337",
+        "address": "8120 Eaton Underpass, Cortezchester, Vietnam",
+        "email": "edwardsrobert@stewart.com",
+        "phone": "+237 661950558"
+      }
+    },
+    {
+      "declarationId": "f546446e-f21d-4f1e-9640-d95212bd0e04",
+      "submittedAt": "2025-02-23",
+      "status": "pending",
+      "child": {
+        "firstName": "Aimee",
+        "lastName": "Valdez",
+        "gender": "Female",
+        "dateOfBirth": "2022-07-07",
+        "placeOfBirth": {
+          "hospital": "Newman-Mckay Hospital",
+          "address": "2599 James Meadows Apt. 415, East David, Mongolia"
+        }
+      },
+      "father": {
+        "firstName": "Robert",
+        "lastName": "Colon",
+        "nationalId": "6880761054810",
+        "phone": "+237 667614286",
+        "email": "amy21@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Melanie Adams",
+        "nationalId": "7944146581086",
+        "address": "66964 Joshua Mountain Apt. 034, West Richardburgh, Venezuela",
+        "email": "karen37@gmail.com",
+        "phone": "+237 660910419"
+      }
+    },
+    {
+      "declarationId": "916783fb-5691-47d6-b20e-e5d1d1cfbd89",
+      "submittedAt": "2023-10-01",
+      "status": "rejected",
+      "child": {
+        "firstName": "Brandi",
+        "lastName": "Gross",
+        "gender": "Male",
+        "dateOfBirth": "2023-10-09",
+        "placeOfBirth": {
+          "hospital": "Powell-Erickson Hospital",
+          "address": "02387 Becky Rapid Suite 574, New Richardburgh, Togo"
+        }
+      },
+      "father": {
+        "firstName": "Joseph",
+        "lastName": "Lopez",
+        "nationalId": "8349359067125",
+        "phone": "+237 692968914",
+        "email": "jamesnguyen@rivera.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Tiffany Hartman",
+        "nationalId": "1523575043097",
+        "address": "034 Thompson Neck Apt. 911, North Stevenmouth, Thailand",
+        "email": "seanrivera@sosa.com",
+        "phone": "+237 654317546"
+      }
+    },
+    {
+      "declarationId": "c1e8772e-bfe0-413a-83a0-f5a0f14fc67b",
+      "submittedAt": "2025-02-21",
+      "status": "approved",
+      "child": {
+        "firstName": "Kyle",
+        "lastName": "Camacho",
+        "gender": "Female",
+        "dateOfBirth": "2022-12-01",
+        "placeOfBirth": {
+          "hospital": "Dunlap Group Hospital",
+          "address": "8411 Jerome Mount, East Margaret, Romania"
+        }
+      },
+      "father": {
+        "firstName": "Joe",
+        "lastName": "Barnett",
+        "nationalId": "2140950511322",
+        "phone": "+237 652529103",
+        "email": "jessicacook@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Barbara Silva",
+        "nationalId": "8857424078977",
+        "address": "20777 Shane Creek Apt. 176, North Ashleemouth, Cape Verde",
+        "email": "spearsruben@yahoo.com",
+        "phone": "+237 685805460"
+      }
+    },
+    {
+      "declarationId": "16579bbb-d40d-4e90-b2ac-806ee8119ec5",
+      "submittedAt": "2023-01-01",
+      "status": "pending",
+      "child": {
+        "firstName": "Tracey",
+        "lastName": "Brown",
+        "gender": "Male",
+        "dateOfBirth": "2023-12-21",
+        "placeOfBirth": {
+          "hospital": "Parker and Sons Hospital",
+          "address": "35024 Nicole Ville Apt. 238, New Erin, Tajikistan"
+        }
+      },
+      "father": {
+        "firstName": "Jonathan",
+        "lastName": "Edwards",
+        "nationalId": "4879566909997",
+        "phone": "+237 652756793",
+        "email": "waltonmonica@peterson-shields.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Mary Kelley",
+        "nationalId": "3518317960817",
+        "address": "4950 Garcia Run, Port Clayton, Bangladesh",
+        "email": "barnesjustin@gmail.com",
+        "phone": "+237 697937479"
+      }
+    },
+    {
+      "declarationId": "b7284178-d1c5-4ff5-b700-2376f8ef1260",
+      "submittedAt": "2024-05-01",
+      "status": "rejected",
+      "child": {
+        "firstName": "Madison",
+        "lastName": "White",
+        "gender": "Male",
+        "dateOfBirth": "2022-10-29",
+        "placeOfBirth": {
+          "hospital": "Cruz, Cooper and Thomas Hospital",
+          "address": "388 Nicholas Bridge, Amandabury, Congo"
+        }
+      },
+      "father": {
+        "firstName": "Shaun",
+        "lastName": "Brown",
+        "nationalId": "2479270894096",
+        "phone": "+237 685703733",
+        "email": "nmerritt@mercer.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Christy Richard",
+        "nationalId": "3636426206583",
+        "address": "7031 Richardson Corners, North Amandaside, Eritrea",
+        "email": "lindakramer@schneider.org",
+        "phone": "+237 661574170"
+      }
+    },
+    {
+      "declarationId": "5a7eb069-ab51-4ed9-ae42-fcf20089926f",
+      "submittedAt": "2025-03-28",
+      "status": "pending",
+      "child": {
+        "firstName": "Kim",
+        "lastName": "Zimmerman",
+        "gender": "Male",
+        "dateOfBirth": "2023-07-01",
+        "placeOfBirth": {
+          "hospital": "Simpson, Sanchez and Price Hospital",
+          "address": "26343 Patrick Heights Apt. 557, Port Justin, Cape Verde"
+        }
+      },
+      "father": {
+        "firstName": "Jacob",
+        "lastName": "Berry",
+        "nationalId": "4080689886259",
+        "phone": "+237 678410672",
+        "email": "russotony@yahoo.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Theresa Barnes",
+        "nationalId": "5612396716530",
+        "address": "588 Jerry Flats Apt. 908, Smithland, Hong Kong",
+        "email": "brianna26@rogers.info",
+        "phone": "+237 661215793"
+      }
+    },
+    {
+      "declarationId": "6b176d83-6760-404e-9b24-365f2544fa4f",
+      "submittedAt": "2023-09-16",
+      "status": "approved",
+      "child": {
+        "firstName": "Vanessa",
+        "lastName": "Farmer",
+        "gender": "Male",
+        "dateOfBirth": "2022-06-29",
+        "placeOfBirth": {
+          "hospital": "Marshall-Shaw Hospital",
+          "address": "3255 Travis Tunnel Apt. 930, South Cynthiaville, Mongolia"
+        }
+      },
+      "father": {
+        "firstName": "Mark",
+        "lastName": "Campos",
+        "nationalId": "7806084833738",
+        "phone": "+237 671888408",
+        "email": "dwilson@smith-pearson.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Joshua Quinn",
+        "nationalId": "4306530400667",
+        "address": "3826 Penny Run Apt. 372, Klinechester, Romania",
+        "email": "vincentowens@strong-martinez.biz",
+        "phone": "+237 663567284"
+      }
+    },
+    {
+      "declarationId": "fc948c93-3e60-4899-b716-85c9ce7f89c2",
+      "submittedAt": "2024-03-15",
+      "status": "rejected",
+      "child": {
+        "firstName": "Alexandra",
+        "lastName": "Rogers",
+        "gender": "Female",
+        "dateOfBirth": "2022-08-03",
+        "placeOfBirth": {
+          "hospital": "Trevino Inc Hospital",
+          "address": "79000 Erin Squares Apt. 910, Englishchester, Guinea"
+        }
+      },
+      "father": {
+        "firstName": "Jeffrey",
+        "lastName": "Tapia",
+        "nationalId": "9656038966383",
+        "phone": "+237 650747139",
+        "email": "kyledaniels@yahoo.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Abigail Byrd",
+        "nationalId": "5747538262116",
+        "address": "09187 Duane Hill Apt. 690, North Dianestad, Marshall Islands",
+        "email": "bassjennifer@gmail.com",
+        "phone": "+237 662004924"
+      }
+    },
+    {
+      "declarationId": "f8d27d91-236a-4be9-b94f-22d8fb1f2071",
+      "submittedAt": "2025-06-04",
+      "status": "approved",
+      "child": {
+        "firstName": "Deborah",
+        "lastName": "Parks",
+        "gender": "Female",
+        "dateOfBirth": "2024-11-21",
+        "placeOfBirth": {
+          "hospital": "Olson-Orozco Hospital",
+          "address": "924 Bradley Place Apt. 121, East Henry, Kiribati"
+        }
+      },
+      "father": {
+        "firstName": "Dale",
+        "lastName": "Washington",
+        "nationalId": "9856434672243",
+        "phone": "+237 652545302",
+        "email": "nguyenmelissa@bass.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Kimberly Smith",
+        "nationalId": "7115666169781",
+        "address": "245 Adrian Port, Williamschester, El Salvador",
+        "email": "melissasimmons@yahoo.com",
+        "phone": "+237 659862962"
+      }
+    },
+    {
+      "declarationId": "cf999c81-3cd0-4c7c-8e24-0171b77d3750",
+      "submittedAt": "2024-10-24",
+      "status": "approved",
+      "child": {
+        "firstName": "Eric",
+        "lastName": "Brown",
+        "gender": "Female",
+        "dateOfBirth": "2024-04-02",
+        "placeOfBirth": {
+          "hospital": "Lane-Martin Hospital",
+          "address": "77223 Jones Summit, Maxwellborough, Guernsey"
+        }
+      },
+      "father": {
+        "firstName": "Richard",
+        "lastName": "Davis",
+        "nationalId": "3543208158625",
+        "phone": "+237 663861566",
+        "email": "acostamatthew@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Jason Vega",
+        "nationalId": "8045557575612",
+        "address": "0733 Ryan Lakes, Seanborough, Montserrat",
+        "email": "jwilliams@carpenter.org",
+        "phone": "+237 685762528"
+      }
+    },
+    {
+      "declarationId": "f3b512c9-0ff1-44fd-a57f-467cb4ff92d5",
+      "submittedAt": "2025-02-07",
+      "status": "approved",
+      "child": {
+        "firstName": "Erik",
+        "lastName": "Thomas",
+        "gender": "Female",
+        "dateOfBirth": "2024-11-24",
+        "placeOfBirth": {
+          "hospital": "Donovan, Stewart and Jordan Hospital",
+          "address": "6167 Ronald Extension Apt. 220, Sabrinaside, Qatar"
+        }
+      },
+      "father": {
+        "firstName": "Edward",
+        "lastName": "Sellers",
+        "nationalId": "7783483575538",
+        "phone": "+237 675190147",
+        "email": "patrick67@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Kyle Lewis",
+        "nationalId": "4223014198226",
+        "address": "2328 Reynolds Extensions Apt. 476, Port Lorrainehaven, Norfolk Island",
+        "email": "jenniferwest@hotmail.com",
+        "phone": "+237 689758130"
+      }
+    },
+    {
+      "declarationId": "6e9a1c23-edcf-4c1e-b562-1436c8f9f558",
+      "submittedAt": "2025-09-05",
+      "status": "approved",
+      "child": {
+        "firstName": "Lindsey",
+        "lastName": "Gilmore",
+        "gender": "Male",
+        "dateOfBirth": "2022-08-11",
+        "placeOfBirth": {
+          "hospital": "Smith-Smith Hospital",
+          "address": "513 Becker Pass Apt. 143, Patrickland, Guam"
+        }
+      },
+      "father": {
+        "firstName": "Kevin",
+        "lastName": "Petersen",
+        "nationalId": "4792782280259",
+        "phone": "+237 695018971",
+        "email": "jamesrice@carter.biz"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Rachel Thomas",
+        "nationalId": "3687781614846",
+        "address": "146 Franklin Point, West Paulmouth, Bulgaria",
+        "email": "wallercourtney@peck.com",
+        "phone": "+237 688130043"
+      }
+    },
+    {
+      "declarationId": "581d21a0-7a67-4304-89cc-2d1d56f12e23",
+      "submittedAt": "2025-06-12",
+      "status": "approved",
+      "child": {
+        "firstName": "Christopher",
+        "lastName": "Harris",
+        "gender": "Female",
+        "dateOfBirth": "2023-01-22",
+        "placeOfBirth": {
+          "hospital": "Clark, Cole and Adkins Hospital",
+          "address": "7549 Steve Estates, Lake Brianside, Bhutan"
+        }
+      },
+      "father": {
+        "firstName": "Brian",
+        "lastName": "Oliver",
+        "nationalId": "1826658600297",
+        "phone": "+237 686406138",
+        "email": "walkerbryan@montes.org"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Zachary Smith",
+        "nationalId": "4628035095345",
+        "address": "71849 Padilla Wall, Robertberg, Sudan",
+        "email": "jeremy34@simmons.com",
+        "phone": "+237 685254441"
+      }
+    },
+    {
+      "declarationId": "7f0a21b9-ca03-407d-9c27-94075e7adb26",
+      "submittedAt": "2024-10-02",
+      "status": "pending",
+      "child": {
+        "firstName": "Charles",
+        "lastName": "Bradley",
+        "gender": "Male",
+        "dateOfBirth": "2024-10-03",
+        "placeOfBirth": {
+          "hospital": "Page-Turner Hospital",
+          "address": "86074 Hopkins Crossing, Lanestad, Djibouti"
+        }
+      },
+      "father": {
+        "firstName": "Mark",
+        "lastName": "Boyd",
+        "nationalId": "9958816053170",
+        "phone": "+237 666731799",
+        "email": "coxmelody@johnston.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Monica Frost",
+        "nationalId": "9147954799153",
+        "address": "55571 Jordan Route Suite 692, North Jonathanport, China",
+        "email": "tlynch@johnson-woodard.biz",
+        "phone": "+237 688225748"
+      }
+    },
+    {
+      "declarationId": "7ca02f60-09b6-4614-9702-66cc331626b2",
+      "submittedAt": "2024-07-14",
+      "status": "pending",
+      "child": {
+        "firstName": "Lisa",
+        "lastName": "Jackson",
+        "gender": "Male",
+        "dateOfBirth": "2023-08-17",
+        "placeOfBirth": {
+          "hospital": "Williams-Jackson Hospital",
+          "address": "487 Reid Cape Suite 246, North Olivia, Korea"
+        }
+      },
+      "father": {
+        "firstName": "Ronald",
+        "lastName": "Hansen",
+        "nationalId": "4208095537008",
+        "phone": "+237 678288411",
+        "email": "perrylinda@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Julie Whitehead",
+        "nationalId": "7693495598792",
+        "address": "803 Anthony Heights Apt. 730, Johnsonborough, Macedonia",
+        "email": "zclark@evans-williams.com",
+        "phone": "+237 675054110"
+      }
+    },
+    {
+      "declarationId": "bd56c9ba-55f5-4345-8008-e61dbfe63d1d",
+      "submittedAt": "2025-05-01",
+      "status": "approved",
+      "child": {
+        "firstName": "Melissa",
+        "lastName": "Dickson",
+        "gender": "Male",
+        "dateOfBirth": "2023-06-10",
+        "placeOfBirth": {
+          "hospital": "Clark PLC Hospital",
+          "address": "124 Carrie Rapid, West Catherine, Equatorial Guinea"
+        }
+      },
+      "father": {
+        "firstName": "Damon",
+        "lastName": "Tate",
+        "nationalId": "4007525245938",
+        "phone": "+237 678525858",
+        "email": "jasminemccall@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Linda Ingram",
+        "nationalId": "1842385413700",
+        "address": "1823 James Mountains Apt. 208, Robertsmouth, Wallis and Futuna",
+        "email": "ehansen@harmon.net",
+        "phone": "+237 652901365"
+      }
+    },
+    {
+      "declarationId": "80730661-5469-4dd5-848a-10bdeeb41e28",
+      "submittedAt": "2024-07-15",
+      "status": "approved",
+      "child": {
+        "firstName": "Valerie",
+        "lastName": "Clark",
+        "gender": "Female",
+        "dateOfBirth": "2023-10-06",
+        "placeOfBirth": {
+          "hospital": "Bowman, Sanders and Cooper Hospital",
+          "address": "6504 Stephanie Creek Suite 764, North Sierra, Zimbabwe"
+        }
+      },
+      "father": {
+        "firstName": "James",
+        "lastName": "Wright",
+        "nationalId": "4618277922959",
+        "phone": "+237 654978976",
+        "email": "iflores@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Marilyn Cooper",
+        "nationalId": "6908290976410",
+        "address": "7535 Shaw Key Suite 003, Taylorshire, Palestinian Territory",
+        "email": "marknicholson@smith.com",
+        "phone": "+237 683284841"
+      }
+    },
+    {
+      "declarationId": "f1047a4b-e91b-45d7-ad4b-b54c5cf5b2e6",
+      "submittedAt": "2023-04-14",
+      "status": "approved",
+      "child": {
+        "firstName": "Matthew",
+        "lastName": "Walker",
+        "gender": "Female",
+        "dateOfBirth": "2023-07-03",
+        "placeOfBirth": {
+          "hospital": "Barrera, Neal and Collins Hospital",
+          "address": "3299 Leah Loop, Johnsonbury, Burkina Faso"
+        }
+      },
+      "father": {
+        "firstName": "Kevin",
+        "lastName": "Chambers",
+        "nationalId": "4732610106219",
+        "phone": "+237 685365416",
+        "email": "hallrobert@gates.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Shelia Lawrence",
+        "nationalId": "8610704212989",
+        "address": "69718 Jackson Harbor, Espinozaburgh, Uruguay",
+        "email": "fcarroll@hotmail.com",
+        "phone": "+237 681647204"
+      }
+    },
+    {
+      "declarationId": "f05190fc-41f9-423f-a660-e73cdcfeddfa",
+      "submittedAt": "2024-05-04",
+      "status": "rejected",
+      "child": {
+        "firstName": "Megan",
+        "lastName": "Jones",
+        "gender": "Female",
+        "dateOfBirth": "2024-01-07",
+        "placeOfBirth": {
+          "hospital": "Jones-Miller Hospital",
+          "address": "3729 Sloan Via, East Bruce, Portugal"
+        }
+      },
+      "father": {
+        "firstName": "Scott",
+        "lastName": "Ellison",
+        "nationalId": "3481637305485",
+        "phone": "+237 668873383",
+        "email": "ufisher@fox.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Linda Young",
+        "nationalId": "4488884236958",
+        "address": "627 John Place, Port Angela, Jamaica",
+        "email": "whitneygonzalez@bennett-shaw.com",
+        "phone": "+237 696605210"
+      }
+    },
+    {
+      "declarationId": "27e3b136-2d25-4a55-b4a0-7a92f3fd5f29",
+      "submittedAt": "2025-03-31",
+      "status": "approved",
+      "child": {
+        "firstName": "Morgan",
+        "lastName": "Lewis",
+        "gender": "Male",
+        "dateOfBirth": "2024-03-09",
+        "placeOfBirth": {
+          "hospital": "Harrison and Sons Hospital",
+          "address": "07011 Matthews Plaza, North Vanessaberg, Norfolk Island"
+        }
+      },
+      "father": {
+        "firstName": "Thomas",
+        "lastName": "Heath",
+        "nationalId": "2426911428176",
+        "phone": "+237 687251615",
+        "email": "davidperry@davis.biz"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Johnathan Moore",
+        "nationalId": "2649392725997",
+        "address": "07638 Stephen Parkway Apt. 038, North Abigailfurt, Bosnia and Herzegovina",
+        "email": "callahanmichelle@hill.com",
+        "phone": "+237 666038547"
+      }
+    },
+    {
+      "declarationId": "d88dcb78-f10e-4be5-9f73-7a948c564711",
+      "submittedAt": "2023-09-23",
+      "status": "rejected",
+      "child": {
+        "firstName": "Charles",
+        "lastName": "Clark",
+        "gender": "Female",
+        "dateOfBirth": "2022-05-20",
+        "placeOfBirth": {
+          "hospital": "Johnson-Archer Hospital",
+          "address": "14481 Church Locks, South Meghan, Malawi"
+        }
+      },
+      "father": {
+        "firstName": "David",
+        "lastName": "White",
+        "nationalId": "1152861736560",
+        "phone": "+237 690209901",
+        "email": "goodwinheather@king.org"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Amy Rasmussen",
+        "nationalId": "8565516692580",
+        "address": "1868 Cabrera Estate, Coreymouth, Togo",
+        "email": "alicia18@preston.com",
+        "phone": "+237 678355180"
+      }
+    },
+    {
+      "declarationId": "a0cf5b75-d3cd-44af-aeed-458d45c2105d",
+      "submittedAt": "2025-05-06",
+      "status": "pending",
+      "child": {
+        "firstName": "Shawn",
+        "lastName": "Barrera",
+        "gender": "Female",
+        "dateOfBirth": "2023-11-17",
+        "placeOfBirth": {
+          "hospital": "Bennett, Brown and Kelly Hospital",
+          "address": "331 Wells Mission Apt. 007, West Dianeton, Malawi"
+        }
+      },
+      "father": {
+        "firstName": "Michael",
+        "lastName": "Payne",
+        "nationalId": "6963415696503",
+        "phone": "+237 680545840",
+        "email": "jamestravis@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Tonya Williams",
+        "nationalId": "7787756451892",
+        "address": "1669 Gill Spurs, New Erikside, Haiti",
+        "email": "janicemiller@yahoo.com",
+        "phone": "+237 656740925"
+      }
+    },
+    {
+      "declarationId": "4b7500b9-9515-4074-9ebf-bf7f301e1ebb",
+      "submittedAt": "2023-01-07",
+      "status": "rejected",
+      "child": {
+        "firstName": "Jeffrey",
+        "lastName": "Martinez",
+        "gender": "Male",
+        "dateOfBirth": "2024-04-22",
+        "placeOfBirth": {
+          "hospital": "Heath-Estes Hospital",
+          "address": "795 Lindsay Cape Suite 981, New Kristineborough, Morocco"
+        }
+      },
+      "father": {
+        "firstName": "Robert",
+        "lastName": "Mcgee",
+        "nationalId": "4281958124056",
+        "phone": "+237 697654178",
+        "email": "patrickmclean@oliver.info"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Cynthia Todd",
+        "nationalId": "6333010925504",
+        "address": "953 Kimberly Unions, Jeffreytown, Ukraine",
+        "email": "rosselijah@gmail.com",
+        "phone": "+237 662424685"
+      }
+    },
+    {
+      "declarationId": "c75faae3-33c6-4289-9dc8-8273f93f47ad",
+      "submittedAt": "2025-08-04",
+      "status": "rejected",
+      "child": {
+        "firstName": "Michelle",
+        "lastName": "Soto",
+        "gender": "Female",
+        "dateOfBirth": "2024-08-19",
+        "placeOfBirth": {
+          "hospital": "Medina, Marks and Le Hospital",
+          "address": "658 Aaron Green Apt. 621, Williamsonport, Barbados"
+        }
+      },
+      "father": {
+        "firstName": "Leon",
+        "lastName": "Franklin",
+        "nationalId": "7317039491908",
+        "phone": "+237 698184527",
+        "email": "greenholly@tyler-werner.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Matthew Mcgrath Jr.",
+        "nationalId": "5720458219405",
+        "address": "0798 Mary Isle Suite 822, West Jasonside, United Kingdom",
+        "email": "townsendthomas@gmail.com",
+        "phone": "+237 674258837"
+      }
+    },
+    {
+      "declarationId": "cdc41062-e377-47ef-9e2e-71c96097c41a",
+      "submittedAt": "2024-05-07",
+      "status": "approved",
+      "child": {
+        "firstName": "Margaret",
+        "lastName": "Allen",
+        "gender": "Female",
+        "dateOfBirth": "2022-05-01",
+        "placeOfBirth": {
+          "hospital": "Young-Mendoza Hospital",
+          "address": "7894 Christian Ways, Rhondashire, Falkland Islands (Malvinas)"
+        }
+      },
+      "father": {
+        "firstName": "Paul",
+        "lastName": "Perkins",
+        "nationalId": "9465459811714",
+        "phone": "+237 664451703",
+        "email": "brian91@whitney.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Cody Hudson",
+        "nationalId": "5792007335487",
+        "address": "806 Clark Greens Apt. 957, Theresatown, Cambodia",
+        "email": "carolynmatthews@harris-lee.info",
+        "phone": "+237 692513545"
+      }
+    },
+    {
+      "declarationId": "c46c2fb6-8d60-46ba-b1c4-22eb0f62ed90",
+      "submittedAt": "2023-05-14",
+      "status": "approved",
+      "child": {
+        "firstName": "Ann",
+        "lastName": "Larson",
+        "gender": "Female",
+        "dateOfBirth": "2023-11-23",
+        "placeOfBirth": {
+          "hospital": "Kline Inc Hospital",
+          "address": "5591 Heath Corner Apt. 084, North Timothytown, Syrian Arab Republic"
+        }
+      },
+      "father": {
+        "firstName": "Ernest",
+        "lastName": "Baker",
+        "nationalId": "9433297801697",
+        "phone": "+237 681010485",
+        "email": "hernandezdavid@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Megan Watts",
+        "nationalId": "4537771040830",
+        "address": "2580 Weaver Shoal, Sarafurt, Malta",
+        "email": "christian14@williams-baker.com",
+        "phone": "+237 691192161"
+      }
+    },
+    {
+      "declarationId": "9e32ffaf-b290-470d-b2ed-fa0c0ea967ac",
+      "submittedAt": "2023-06-17",
+      "status": "pending",
+      "child": {
+        "firstName": "Matthew",
+        "lastName": "Adams",
+        "gender": "Female",
+        "dateOfBirth": "2023-04-26",
+        "placeOfBirth": {
+          "hospital": "Reed, Ward and White Hospital",
+          "address": "499 Lawrence Parkways, Simmonstown, Bahamas"
+        }
+      },
+      "father": {
+        "firstName": "Matthew",
+        "lastName": "Willis",
+        "nationalId": "3275323302442",
+        "phone": "+237 658195882",
+        "email": "brownelizabeth@lawrence.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Linda Scott",
+        "nationalId": "7788551591903",
+        "address": "4290 Brock Turnpike Suite 812, North Richard, Ecuador",
+        "email": "jessica26@gmail.com",
+        "phone": "+237 656173724"
+      }
+    },
+    {
+      "declarationId": "baff12a1-afc2-431a-bc8f-ea2bc2a47972",
+      "submittedAt": "2025-04-12",
+      "status": "approved",
+      "child": {
+        "firstName": "Hunter",
+        "lastName": "Torres",
+        "gender": "Female",
+        "dateOfBirth": "2024-05-18",
+        "placeOfBirth": {
+          "hospital": "Maxwell-Martinez Hospital",
+          "address": "939 Hurst Vista, Lake Margaret, Sierra Leone"
+        }
+      },
+      "father": {
+        "firstName": "Clinton",
+        "lastName": "Meza",
+        "nationalId": "5101556733201",
+        "phone": "+237 666135914",
+        "email": "scarr@bell.info"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Timothy Stevens",
+        "nationalId": "6115179594711",
+        "address": "0431 Maurice Forks, East Erinton, Korea",
+        "email": "yorkstephen@flores.com",
+        "phone": "+237 698861160"
+      }
+    },
+    {
+      "declarationId": "866d03df-3a76-4323-acd1-8a1dc7753b52",
+      "submittedAt": "2023-11-24",
+      "status": "pending",
+      "child": {
+        "firstName": "Lisa",
+        "lastName": "Moore",
+        "gender": "Male",
+        "dateOfBirth": "2022-09-10",
+        "placeOfBirth": {
+          "hospital": "Bowers PLC Hospital",
+          "address": "0436 Griffin Village Suite 294, Port Sylviaport, United States Virgin Islands"
+        }
+      },
+      "father": {
+        "firstName": "Christopher",
+        "lastName": "Moore",
+        "nationalId": "1147645855000",
+        "phone": "+237 688425258",
+        "email": "jaredmorrison@arnold.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Gerald Stanley",
+        "nationalId": "6253859645774",
+        "address": "45127 David Way Apt. 570, Port Robertborough, Mali",
+        "email": "sandrahall@white.com",
+        "phone": "+237 664403117"
+      }
+    },
+    {
+      "declarationId": "3540f248-066d-4eb2-bfe5-f2749d025329",
+      "submittedAt": "2024-06-23",
+      "status": "rejected",
+      "child": {
+        "firstName": "Cynthia",
+        "lastName": "Wall",
+        "gender": "Male",
+        "dateOfBirth": "2022-05-06",
+        "placeOfBirth": {
+          "hospital": "Howard-Hardy Hospital",
+          "address": "072 James Light Suite 602, New Michelleside, Dominican Republic"
+        }
+      },
+      "father": {
+        "firstName": "Joshua",
+        "lastName": "Carson",
+        "nationalId": "2939284827107",
+        "phone": "+237 654192880",
+        "email": "bassrussell@ellis-brooks.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Charles Ford",
+        "nationalId": "8805377222959",
+        "address": "0979 Wade Circle Suite 219, Paulland, Macao",
+        "email": "johnsoncrystal@yahoo.com",
+        "phone": "+237 655673201"
+      }
+    },
+    {
+      "declarationId": "51b4dca5-568e-47cb-b29e-779f151890e0",
+      "submittedAt": "2025-03-29",
+      "status": "pending",
+      "child": {
+        "firstName": "Kurt",
+        "lastName": "Wolf",
+        "gender": "Male",
+        "dateOfBirth": "2024-05-25",
+        "placeOfBirth": {
+          "hospital": "Tucker LLC Hospital",
+          "address": "919 Carrillo Junctions, Lake Jordan, Hungary"
+        }
+      },
+      "father": {
+        "firstName": "Benjamin",
+        "lastName": "Hunter",
+        "nationalId": "3698758056796",
+        "phone": "+237 653089255",
+        "email": "pereztracey@king.info"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Candice Flowers",
+        "nationalId": "8555423841367",
+        "address": "12530 Louis Meadows Apt. 281, Briannahaven, China",
+        "email": "francis18@hayes.com",
+        "phone": "+237 695517278"
+      }
+    },
+    {
+      "declarationId": "659bf3e2-8e64-474c-83b6-f03f75064133",
+      "submittedAt": "2024-08-25",
+      "status": "approved",
+      "child": {
+        "firstName": "Matthew",
+        "lastName": "Rodriguez",
+        "gender": "Male",
+        "dateOfBirth": "2024-11-22",
+        "placeOfBirth": {
+          "hospital": "Murray PLC Hospital",
+          "address": "0703 Sarah Overpass Apt. 677, Juarezberg, Afghanistan"
+        }
+      },
+      "father": {
+        "firstName": "Daniel",
+        "lastName": "Peters",
+        "nationalId": "6834609839788",
+        "phone": "+237 692642443",
+        "email": "mccoybrian@richardson.biz"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Tommy Davis",
+        "nationalId": "3632868420271",
+        "address": "096 Hall Center, New Andrewberg, Norfolk Island",
+        "email": "timothydecker@yahoo.com",
+        "phone": "+237 686668799"
+      }
+    },
+    {
+      "declarationId": "f712055b-05a0-4db0-bd18-7f4c1634a84e",
+      "submittedAt": "2025-09-02",
+      "status": "rejected",
+      "child": {
+        "firstName": "Zachary",
+        "lastName": "Barnes",
+        "gender": "Male",
+        "dateOfBirth": "2022-07-12",
+        "placeOfBirth": {
+          "hospital": "Anderson-Smith Hospital",
+          "address": "07066 Daniel Summit, East Alvin, Svalbard & Jan Mayen Islands"
+        }
+      },
+      "father": {
+        "firstName": "Eric",
+        "lastName": "Brown",
+        "nationalId": "2888628290257",
+        "phone": "+237 673082777",
+        "email": "jacquelinebridges@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Deborah Ochoa",
+        "nationalId": "6622525651314",
+        "address": "3299 Alexandria Tunnel, Cameronmouth, Dominica",
+        "email": "bradleymolina@jackson.com",
+        "phone": "+237 664530260"
+      }
+    },
+    {
+      "declarationId": "db5e6c2f-770b-4d46-8401-52a520a8ac65",
+      "submittedAt": "2023-08-27",
+      "status": "pending",
+      "child": {
+        "firstName": "Deanna",
+        "lastName": "Ortiz",
+        "gender": "Female",
+        "dateOfBirth": "2023-12-21",
+        "placeOfBirth": {
+          "hospital": "Stanton-Mcknight Hospital",
+          "address": "81886 Harrison Square, East Franciscoland, French Polynesia"
+        }
+      },
+      "father": {
+        "firstName": "Steven",
+        "lastName": "Martinez",
+        "nationalId": "8362074139838",
+        "phone": "+237 656752186",
+        "email": "whitetravis@quinn.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Laura Hester",
+        "nationalId": "4511828913626",
+        "address": "4916 Thompson Points, North Joannehaven, Guam",
+        "email": "birdsheila@gmail.com",
+        "phone": "+237 674235894"
+      }
+    },
+    {
+      "declarationId": "9a5f2ce3-f339-408a-9566-b1ebcb479b60",
+      "submittedAt": "2023-08-16",
+      "status": "rejected",
+      "child": {
+        "firstName": "Jennifer",
+        "lastName": "Esparza",
+        "gender": "Female",
+        "dateOfBirth": "2023-07-25",
+        "placeOfBirth": {
+          "hospital": "Tanner and Sons Hospital",
+          "address": "847 Megan Pass, Scottmouth, Sudan"
+        }
+      },
+      "father": {
+        "firstName": "Christopher",
+        "lastName": "Cunningham",
+        "nationalId": "4439343759314",
+        "phone": "+237 685913625",
+        "email": "timothy55@bray.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "David Simmons",
+        "nationalId": "5086141506781",
+        "address": "954 Wade Fords Suite 418, Lake Robert, Martinique",
+        "email": "rachael68@yahoo.com",
+        "phone": "+237 677282048"
+      }
+    },
+    {
+      "declarationId": "75c1f5ec-132a-41f6-940f-e534c2723ba8",
+      "submittedAt": "2023-07-01",
+      "status": "rejected",
+      "child": {
+        "firstName": "Angela",
+        "lastName": "Fleming",
+        "gender": "Male",
+        "dateOfBirth": "2022-06-14",
+        "placeOfBirth": {
+          "hospital": "Bennett LLC Hospital",
+          "address": "3507 Roy Tunnel Suite 970, South Karen, Cyprus"
+        }
+      },
+      "father": {
+        "firstName": "William",
+        "lastName": "Mcclain",
+        "nationalId": "1043042552055",
+        "phone": "+237 681121740",
+        "email": "hendersonbradley@hicks-roberson.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Jim Grant",
+        "nationalId": "3452823298177",
+        "address": "14130 Tamara Road Apt. 265, Brownmouth, Cambodia",
+        "email": "natalie71@myers-mata.net",
+        "phone": "+237 684473987"
+      }
+    },
+    {
+      "declarationId": "d33a61e1-a849-4841-9909-3b3ecaba4e4d",
+      "submittedAt": "2025-01-26",
+      "status": "pending",
+      "child": {
+        "firstName": "Carmen",
+        "lastName": "Johnson",
+        "gender": "Female",
+        "dateOfBirth": "2024-12-02",
+        "placeOfBirth": {
+          "hospital": "Jones-Wheeler Hospital",
+          "address": "9316 James Cliffs, South David, Guinea"
+        }
+      },
+      "father": {
+        "firstName": "Robert",
+        "lastName": "Jones",
+        "nationalId": "7287942976883",
+        "phone": "+237 693422350",
+        "email": "brianpaul@spears-jenkins.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Amanda Robbins",
+        "nationalId": "8987860701831",
+        "address": "1304 Carla Field, Matthewbury, Jersey",
+        "email": "joshuamurray@johnson-jordan.com",
+        "phone": "+237 688906151"
+      }
+    },
+    {
+      "declarationId": "81e7a9f4-6f6f-4e35-b877-0dd7ea0fe152",
+      "submittedAt": "2023-04-17",
+      "status": "approved",
+      "child": {
+        "firstName": "Anne",
+        "lastName": "Hall",
+        "gender": "Male",
+        "dateOfBirth": "2024-02-10",
+        "placeOfBirth": {
+          "hospital": "Estrada-Clayton Hospital",
+          "address": "381 James Ways, West Zachary, Finland"
+        }
+      },
+      "father": {
+        "firstName": "Austin",
+        "lastName": "Jones",
+        "nationalId": "2517095031281",
+        "phone": "+237 684269596",
+        "email": "melissarichards@yahoo.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Deborah Baxter",
+        "nationalId": "6825080341014",
+        "address": "48286 Macdonald Port, Donaldton, Bermuda",
+        "email": "steve69@yahoo.com",
+        "phone": "+237 670814275"
+      }
+    },
+    {
+      "declarationId": "a22163cd-8db2-4820-8d3a-346d098777a9",
+      "submittedAt": "2024-01-30",
+      "status": "pending",
+      "child": {
+        "firstName": "Carrie",
+        "lastName": "Daniel",
+        "gender": "Female",
+        "dateOfBirth": "2024-09-11",
+        "placeOfBirth": {
+          "hospital": "Williams LLC Hospital",
+          "address": "22155 Timothy Divide, North Samantha, Kyrgyz Republic"
+        }
+      },
+      "father": {
+        "firstName": "Jose",
+        "lastName": "Daniels",
+        "nationalId": "2039176361159",
+        "phone": "+237 655161932",
+        "email": "hornediana@nguyen.biz"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Manuel Acevedo",
+        "nationalId": "3745409550819",
+        "address": "54535 Travis Extension Apt. 976, Port Dwayneborough, Dominica",
+        "email": "kgordon@hooper.com",
+        "phone": "+237 685697935"
+      }
+    },
+    {
+      "declarationId": "45781d0d-bb55-465c-9a3c-be231d3ffefc",
+      "submittedAt": "2024-02-10",
+      "status": "rejected",
+      "child": {
+        "firstName": "Kevin",
+        "lastName": "Davis",
+        "gender": "Female",
+        "dateOfBirth": "2022-01-18",
+        "placeOfBirth": {
+          "hospital": "Spence Group Hospital",
+          "address": "9186 Jessica Fork, Campbellborough, Gabon"
+        }
+      },
+      "father": {
+        "firstName": "Samuel",
+        "lastName": "Vaughn",
+        "nationalId": "7461620991926",
+        "phone": "+237 656924334",
+        "email": "tjohnson@yahoo.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Daniel Vargas",
+        "nationalId": "1185264874068",
+        "address": "55378 Smith Fall, Perezshire, Ghana",
+        "email": "rubenlin@santos-hernandez.biz",
+        "phone": "+237 667924752"
+      }
+    },
+    {
+      "declarationId": "e57a1a8e-eb5d-411b-8341-bbefba3aef94",
+      "submittedAt": "2023-02-27",
+      "status": "rejected",
+      "child": {
+        "firstName": "Daniel",
+        "lastName": "Hall",
+        "gender": "Female",
+        "dateOfBirth": "2023-09-12",
+        "placeOfBirth": {
+          "hospital": "Clark-Harris Hospital",
+          "address": "16786 Ellis Bypass, Harrisonshire, Iran"
+        }
+      },
+      "father": {
+        "firstName": "Gregory",
+        "lastName": "Rogers",
+        "nationalId": "8717153811461",
+        "phone": "+237 682869342",
+        "email": "sellersdavid@brown.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Deborah Cook",
+        "nationalId": "4160363655341",
+        "address": "05678 Diane Springs Suite 787, East Bettyland, Ecuador",
+        "email": "maria81@gmail.com",
+        "phone": "+237 693909518"
+      }
+    },
+    {
+      "declarationId": "54be5cde-2900-4ef9-a54a-387d3574b408",
+      "submittedAt": "2025-08-01",
+      "status": "rejected",
+      "child": {
+        "firstName": "Joshua",
+        "lastName": "Ruiz",
+        "gender": "Female",
+        "dateOfBirth": "2023-05-23",
+        "placeOfBirth": {
+          "hospital": "Torres, Foster and Atkinson Hospital",
+          "address": "4623 Rodney Place, Torresbury, Turkmenistan"
+        }
+      },
+      "father": {
+        "firstName": "Scott",
+        "lastName": "Mack",
+        "nationalId": "3952314035741",
+        "phone": "+237 682956704",
+        "email": "gabriela10@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Lisa Harris",
+        "nationalId": "4477629764475",
+        "address": "262 Rangel Cape Apt. 589, Lambertville, Falkland Islands (Malvinas)",
+        "email": "ewilson@hotmail.com",
+        "phone": "+237 650770986"
+      }
+    },
+    {
+      "declarationId": "52ade308-df27-4ea9-ad1c-5ec46c183e3a",
+      "submittedAt": "2024-03-15",
+      "status": "approved",
+      "child": {
+        "firstName": "Robert",
+        "lastName": "Floyd",
+        "gender": "Male",
+        "dateOfBirth": "2022-05-04",
+        "placeOfBirth": {
+          "hospital": "Bradford Inc Hospital",
+          "address": "1881 Joshua Parkway Apt. 756, East Morganchester, Tuvalu"
+        }
+      },
+      "father": {
+        "firstName": "Scott",
+        "lastName": "Alvarado",
+        "nationalId": "1665824435441",
+        "phone": "+237 661064183",
+        "email": "michaelschmidt@gmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Marc Randall",
+        "nationalId": "1064792193808",
+        "address": "073 Ryan Crescent Suite 900, North Candaceside, Peru",
+        "email": "gary18@hotmail.com",
+        "phone": "+237 685761365"
+      }
+    },
+    {
+      "declarationId": "90f67abd-60b2-4ebc-ae9a-dbd474fb00f7",
+      "submittedAt": "2023-11-19",
+      "status": "rejected",
+      "child": {
+        "firstName": "Brian",
+        "lastName": "Orr",
+        "gender": "Male",
+        "dateOfBirth": "2022-09-27",
+        "placeOfBirth": {
+          "hospital": "Gonzalez Group Hospital",
+          "address": "4341 Rivera Fall, Robersonport, Panama"
+        }
+      },
+      "father": {
+        "firstName": "Victor",
+        "lastName": "Murray",
+        "nationalId": "8766476442290",
+        "phone": "+237 686767963",
+        "email": "christopher17@smith-marshall.info"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Brandon Chavez",
+        "nationalId": "1714280033589",
+        "address": "08986 Kimberly Burgs, Conniemouth, Costa Rica",
+        "email": "jeffreyramsey@gmail.com",
+        "phone": "+237 681611407"
+      }
+    },
+    {
+      "declarationId": "dd10a2ef-c372-4a30-aa0c-477ce2e6c485",
+      "submittedAt": "2024-05-15",
+      "status": "rejected",
+      "child": {
+        "firstName": "Timothy",
+        "lastName": "Parrish",
+        "gender": "Male",
+        "dateOfBirth": "2022-12-18",
+        "placeOfBirth": {
+          "hospital": "Miranda and Sons Hospital",
+          "address": "5628 Matthews Branch, Port Carrie, Peru"
+        }
+      },
+      "father": {
+        "firstName": "Erik",
+        "lastName": "Mckinney",
+        "nationalId": "5505962477453",
+        "phone": "+237 691447232",
+        "email": "christine87@mann.biz"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Cynthia Jackson",
+        "nationalId": "2614078199079",
+        "address": "385 Elizabeth Mountain, West Daniel, Saint Pierre and Miquelon",
+        "email": "parrishjames@gutierrez.biz",
+        "phone": "+237 669444891"
+      }
+    },
+    {
+      "declarationId": "2e6237c3-2475-4ef2-8141-77f4f7351491",
+      "submittedAt": "2024-03-23",
+      "status": "approved",
+      "child": {
+        "firstName": "Taylor",
+        "lastName": "Gibson",
+        "gender": "Female",
+        "dateOfBirth": "2024-03-10",
+        "placeOfBirth": {
+          "hospital": "Porter Ltd Hospital",
+          "address": "202 Smith View, Garciaville, Congo"
+        }
+      },
+      "father": {
+        "firstName": "Christopher",
+        "lastName": "Simmons",
+        "nationalId": "4536445234299",
+        "phone": "+237 657648411",
+        "email": "brooke76@hotmail.com"
+      },
+      "declarant": {
+        "relationshipToChild": "Guardian",
+        "fullName": "Joshua Scott",
+        "nationalId": "4051713283970",
+        "address": "90241 Noah Court Suite 657, Jessicaport, Martinique",
+        "email": "floresrobert@gmail.com",
+        "phone": "+237 662765202"
+      }
+    }
+  ]
+}
