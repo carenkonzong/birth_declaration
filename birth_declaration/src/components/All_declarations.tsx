@@ -3,30 +3,30 @@ import Declaration_Card from "./Declaration_Card";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-type User = {
+type Declarations = {
   id: string;
   name?: string;
   phone?: string;
   birthDate?: string;
   status?: string;
+  declarationId: string;
 };
 
 function All_declarations() {
-  const [users, setUsers] = useState<User[]>([]);
+  const [declarations, setDeclarations] = useState<Declarations[]>([]);
+
+  const search = async () => {
+    const response = await fetch("http://localhost:8080/declarations");
+    const data = await response.json();
+    setDeclarations(data);
+    console.log(data);
+  };
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((data: User[]) => {
-        setUsers(data);
-        console.log(users);
-      })
-      .catch((error) => {
-        console.error("Error fetching users:", error);
-      });
+    search();
   }, []);
 
-  return (
+  http: return (
     <>
       <div className="flex justify-center m-5 ">
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col shadow-xl bg-[#fafafa]">
@@ -50,11 +50,16 @@ function All_declarations() {
             </div>
           </div>
           <div>
-            {users.map((user) => (
+            {declarations.map((declaration) => (
               <Declaration_Card
-                id={user.id}
-                firstName={user.name}
-                birthDate={user.phone}
+                key={declaration.declarationId}
+                id={declaration.declarationId}
+                firstName={declaration.child.firstName}
+                lastName={declaration.child.lastName}
+                birthDate={declaration.child.dateOfBirth}
+                submitionDate={declaration.submittedAt}
+                father={declaration.father.firstName}
+                mother={declaration.declarant.fullName}
                 status="Submitted"
               />
             ))}
