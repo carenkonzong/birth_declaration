@@ -32,28 +32,28 @@ function Declaration_Card(props: Props) {
             <h1 className="text-lg font-semibold mb-1">
               {firstName} {lastName}
             </h1>
-            <h1 className="text-gray-500 text-base font-extralight mb-">
+            <h1 className="text-gray-500 text-sm font-extralight mb-">
               Born: {birthDate}
             </h1>
-            <h1 className="text-gray-500 text-base font-extralight mb-5">
+            <h1 className="text-gray-500 text-sm font-extralight mb-5">
               Father: {father} | Mother: {mother}
             </h1>
             <div className="flex items-center">
-              <h1 className="text-gray-500 text-base font-extralight mb-1 flex items-center mr-5">
+              <h1 className="text-gray-500 text-sm font-extralight mb-1 flex items-center mr-5">
                 <div className="mr-1 flex">
                   <Calendar size={15} />
                 </div>
                 Created: {submitionDate}
               </h1>
-              <h1 className="text-gray-500 text-base font-extralight bg-gray-100 rounded-2xl flex justify-center px-3 items-center">
+              <h1 className="text-gray-500 text-sm font-extralight bg-gray-100 rounded-2xl flex justify-center px-3 items-center">
                 ID: {id}
               </h1>
             </div>
           </div>
           <div className="ml-auto flex flex-col justify-between">
-            <h1 className="bg-blue-500 px-3 py-1 text-white rounded-2xl flex justify-center ">
+            <h1 className="bg-blue-500 px-3 py-1 text-white rounded-2xl flex justify-center items-center font-light text-sm">
               <div className="mr-2">
-                <Clock size={20} />
+                <Clock size={18} />
               </div>
               {status}
             </h1>

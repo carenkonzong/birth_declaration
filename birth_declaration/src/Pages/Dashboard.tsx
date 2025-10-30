@@ -4,11 +4,11 @@ import Top_bar from "../components/Top_bar";
 
 function Dashboard() {
   return (
-    <>
+    <main>
       <Top_bar />
       <Card_parent />
       <All_declarations />
-    </>
+    </main>
   );
 }
 
