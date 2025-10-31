@@ -3,7 +3,7 @@
     {
       "declarationId": "DCL-88896",
       "submittedAt": "20/10/2023",
-      "status": "rejected",
+      "status": "draft",
       "child": {
         "firstName": "Jacob",
         "lastName": "Morales",
@@ -77,7 +77,7 @@
     {
       "declarationId": "DCL-90657",
       "submittedAt": "05/02/2024",
-      "status": "rejected",
+      "status": "draft",
       "child": {
         "firstName": "Jesse",
         "lastName": "Harris",

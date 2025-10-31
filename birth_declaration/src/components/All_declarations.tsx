@@ -1,31 +1,29 @@
 import { CirclePlus } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-type Declarations = {
+type Declaration = {
   id: string;
-  name?: string;
-  phone?: string;
-  birthDate?: string;
-  status?: string;
+  child: {
+    firstName: string;
+    lastName: string;
+    dateOfBirth: string;
+  };
+  father: {
+    firstName: string;
+  };
+  declarant: {
+    fullName: string;
+  };
+  submittedAt: string;
   declarationId: string;
 };
 
-function All_declarations() {
-  const [declarations, setDeclarations] = useState<Declarations[]>([]);
+type Props = {
+  declarations: Declaration[];
+};
 
-  const search = async () => {
-    const response = await fetch("http://localhost:8080/declarations");
-    const data = await response.json();
-    setDeclarations(data);
-    console.log(data);
-  };
-
-  useEffect(() => {
-    search();
-  }, []);
-
+function All_declarations({ declarations }: Props) {
   http: return (
     <>
       <div className="flex justify-center m-5 ">
