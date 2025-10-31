@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Children, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 type Props = {
   label: string;

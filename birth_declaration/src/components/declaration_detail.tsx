@@ -2,7 +2,7 @@ import Heading from "./Heading";
 import Top_bar from "./Top_bar";
 import Details from "./details";
 import Head from "./head";
-import { Calendar, MapPin, User, Download } from "lucide-react";
+import { Calendar, MapPin, User, ArrowLeft } from "lucide-react";
 import Button from "../UI Components/Button";
 
 function Declaration_detail() {
@@ -11,11 +11,7 @@ function Declaration_detail() {
       <Top_bar />
       <div className="flex justify-center mx-5 flex-col">
         <Heading head="Declaration details" subhead="ID: 8">
-          <Button
-            btnHead="Back to Dashboard"
-            icon={Download}
-            link="/dashboard"
-          />
+          <Button btnHead="Back to Dashboard" icon={ArrowLeft} link="/" />
         </Heading>
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
           <Head

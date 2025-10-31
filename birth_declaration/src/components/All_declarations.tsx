@@ -25,7 +25,7 @@ type Props = {
 };
 
 function All_declarations({ declarations }: Props) {
-  http: return (
+  return (
     <>
       <div className="flex justify-center m-5 ">
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col shadow-xl bg-[#fafafa]">

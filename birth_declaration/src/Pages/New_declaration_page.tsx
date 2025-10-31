@@ -10,11 +10,7 @@ function New_declaration_page() {
   return (
     <>
       <Heading head="Birth Declarations" subhead="Declare a new Birth">
-        <Button
-          btnHead="Back to Dashboard"
-          icon={ArrowLeft}
-          link="/dashboard"
-        />
+        <Button btnHead="Back to Dashboard" icon={ArrowLeft} link="/" />
       </Heading>
       <New_Declaration_element
         head="Child Information"
