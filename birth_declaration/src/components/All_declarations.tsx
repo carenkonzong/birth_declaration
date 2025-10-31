@@ -17,6 +17,7 @@ type Declaration = {
   };
   submittedAt: string;
   declarationId: string;
+  status: string;
 };
 
 type Props = {
@@ -48,19 +49,28 @@ function All_declarations({ declarations }: Props) {
             </div>
           </div>
           <div>
-            {declarations.map((declaration) => (
-              <Declaration_Card
-                key={declaration.declarationId}
-                id={declaration.declarationId}
-                firstName={declaration.child.firstName}
-                lastName={declaration.child.lastName}
-                birthDate={declaration.child.dateOfBirth}
-                submitionDate={declaration.submittedAt}
-                father={declaration.father.firstName}
-                mother={declaration.declarant.fullName}
-                status="Submitted"
-              />
-            ))}
+            {declarations.map(
+              ({
+                declarationId,
+                child,
+                father,
+                declarant,
+                submittedAt,
+                status,
+              }) => (
+                <Declaration_Card
+                  key={declarationId}
+                  id={declarationId}
+                  firstName={child.firstName}
+                  lastName={child.lastName}
+                  birthDate={child.dateOfBirth}
+                  submitionDate={submittedAt}
+                  father={father.firstName}
+                  mother={declarant.fullName}
+                  status={status.toUpperCase()}
+                />
+              )
+            )}
           </div>
         </div>
       </div>

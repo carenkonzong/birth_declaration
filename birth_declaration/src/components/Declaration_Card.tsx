@@ -1,5 +1,12 @@
-import { Clock, Calendar } from "lucide-react";
+import {
+  Calendar,
+  CircleCheck,
+  Clock3,
+  CircleX,
+  CircleDashed,
+} from "lucide-react";
 import { Link } from "react-router";
+import Approved_status from "../UI Components/Approved_status";
 
 type Props = {
   id: string;
@@ -12,17 +19,60 @@ type Props = {
   mother: string;
 };
 
-function Declaration_Card(props: Props) {
-  const {
-    firstName,
-    lastName,
-    birthDate,
-    id,
-    status,
-    submitionDate,
-    father,
-    mother,
-  } = props;
+function Declaration_Card({
+  firstName,
+  lastName,
+  birthDate,
+  id,
+  status,
+  submitionDate,
+  father,
+  mother,
+}: Props) {
+  const renderStatus = () => {
+    switch (status) {
+      case "APPROVED":
+        return (
+          <Approved_status
+            dStatus="APPROVED"
+            icon={CircleCheck}
+            color="bg-green-400"
+          />
+        );
+      case "PENDING":
+        return (
+          <Approved_status
+            dStatus="SUBMITTED"
+            icon={Clock3}
+            color="bg-[#14a5e8]"
+          />
+        );
+      case "REJECTED":
+        return (
+          <Approved_status
+            dStatus="REJECTED"
+            icon={CircleX}
+            color="bg-red-600"
+          />
+        );
+      case "DRAFT":
+        return (
+          <Approved_status
+            dStatus="DRAFT"
+            icon={CircleDashed}
+            color="bg-gray-300"
+          />
+        );
+      default:
+        return (
+          <Approved_status
+            dStatus="Unknown Status"
+            icon={CircleX}
+            color="bg-gray-500"
+          />
+        );
+    }
+  };
 
   return (
     <>
@@ -51,12 +101,7 @@ function Declaration_Card(props: Props) {
             </div>
           </div>
           <div className="ml-auto flex flex-col justify-between">
-            <h1 className="bg-blue-500 px-3 py-1 text-white rounded-2xl flex justify-center items-center font-light text-sm">
-              <div className="mr-2">
-                <Clock size={18} />
-              </div>
-              {status}
-            </h1>
+            {renderStatus()}
             <Link
               to={"/declaration_details"}
               className="border px-3 py-1 rounded-xl border-black/25 cursor-pointer hover:bg-[#23bf72] hover:text-white transition duration-300 hover:border-white"
