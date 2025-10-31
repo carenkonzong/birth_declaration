@@ -6,7 +6,7 @@ import {
   CircleDashed,
 } from "lucide-react";
 import { Link } from "react-router";
-import Approved_status from "../UI Components/Approved_status";
+import Declaration_status from "../UI Components/Declaration_status";
 
 type Props = {
   id: string;
@@ -33,7 +33,7 @@ function Declaration_Card({
     switch (status) {
       case "APPROVED":
         return (
-          <Approved_status
+          <Declaration_status
             dStatus="APPROVED"
             icon={CircleCheck}
             color="bg-green-400"
@@ -41,7 +41,7 @@ function Declaration_Card({
         );
       case "PENDING":
         return (
-          <Approved_status
+          <Declaration_status
             dStatus="SUBMITTED"
             icon={Clock3}
             color="bg-[#14a5e8]"
@@ -49,7 +49,7 @@ function Declaration_Card({
         );
       case "REJECTED":
         return (
-          <Approved_status
+          <Declaration_status
             dStatus="REJECTED"
             icon={CircleX}
             color="bg-red-600"
@@ -57,7 +57,7 @@ function Declaration_Card({
         );
       case "DRAFT":
         return (
-          <Approved_status
+          <Declaration_status
             dStatus="DRAFT"
             icon={CircleDashed}
             color="bg-gray-300"
@@ -65,7 +65,7 @@ function Declaration_Card({
         );
       default:
         return (
-          <Approved_status
+          <Declaration_status
             dStatus="Unknown Status"
             icon={CircleX}
             color="bg-gray-500"

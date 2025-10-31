@@ -25,10 +25,13 @@ function Dashboard() {
   const [declarations, setDeclarations] = useState<Declarations[]>([]);
 
   const search = async () => {
-    const response = await fetch("http://localhost:8080/declarations");
-    const data = await response.json();
-    setDeclarations(data);
-    console.log(data);
+    try {
+      const response = await fetch("http://localhost:8080/declarations");
+      const data = await response.json();
+      setDeclarations(data);
+    } catch (error) {
+      console.error("Error fetching declarations:", error);
+    }
   };
 
   useEffect(() => {

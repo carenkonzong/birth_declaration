@@ -6,7 +6,7 @@ type Props = {
   color: string;
 };
 
-function Approved_status({ dStatus, icon: Icon, color }: Props) {
+function Declaration_status({ dStatus, icon: Icon, color }: Props) {
   return (
     <h1
       className={` px-3 py-1 ${color} text-white rounded-2xl flex justify-center items-center font-light text-sm`}
@@ -19,4 +19,4 @@ function Approved_status({ dStatus, icon: Icon, color }: Props) {
   );
 }
 
-export default Approved_status;
+export default Declaration_status;
