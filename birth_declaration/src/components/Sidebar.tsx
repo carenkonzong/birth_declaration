@@ -39,7 +39,7 @@ function Sidebar() {
               <li>
                 <Link
                   className="flex px-3 text-sm py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer"
-                  to="/dashboard"
+                  to="/"
                 >
                   <House size={18} className="mr-5" />
                   Dashboard
@@ -47,7 +47,7 @@ function Sidebar() {
               </li>
               <li>
                 <Link
-                  to=" "
+                  to=""
                   className="flex px-3 py-2 text-sm rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer"
                 >
                   <FileText size={18} className="mr-5" />

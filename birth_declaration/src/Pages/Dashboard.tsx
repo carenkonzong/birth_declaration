@@ -2,27 +2,10 @@ import All_declarations from "../components/All_declarations";
 import Card_parent from "../components/Card_parent";
 import Top_bar from "../components/Top_bar";
 import { useEffect, useState } from "react";
-
-type Declarations = {
-  id: string;
-  child: {
-    firstName: string;
-    lastName: string;
-    dateOfBirth: string;
-  };
-  father: {
-    firstName: string;
-  };
-  declarant: {
-    fullName: string;
-  };
-  submittedAt: string;
-  status: string;
-  declarationId: string;
-};
+import type { Declaration } from "../Types/Declaration";
 
 function Dashboard() {
-  const [declarations, setDeclarations] = useState<Declarations[]>([]);
+  const [declarations, setDeclarations] = useState<Declaration[]>([]);
 
   const search = async () => {
     try {
