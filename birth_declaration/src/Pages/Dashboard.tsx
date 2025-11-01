@@ -2,7 +2,7 @@ import All_declarations from "../components/All_declarations";
 import Card_parent from "../components/Card_parent";
 import Top_bar from "../components/Top_bar";
 import { useEffect, useState } from "react";
-import type { Declaration } from "../Types/Declaration";
+import type { Declaration } from "@/Types/Declaration";
 
 function Dashboard() {
   const [declarations, setDeclarations] = useState<Declaration[]>([]);

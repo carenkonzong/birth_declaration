@@ -1,7 +1,7 @@
 import { CirclePlus } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
 import { Link } from "react-router-dom";
-import type { Declaration } from "../Types/Declaration";
+import type { Declaration } from "@/Types/Declaration";
 
 type Props = {
   declarations: Declaration[];
