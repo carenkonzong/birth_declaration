@@ -1,25 +1,10 @@
 import All_declarations from "../components/All_declarations";
 import Card_parent from "../components/Card_parent";
 import Top_bar from "../components/Top_bar";
-import { useEffect, useState } from "react";
-import type { Declaration } from "@/Types/Declaration";
+import useDeclarations from "../hooks/use-declarations/useDeclarations";
 
 function Dashboard() {
-  const [declarations, setDeclarations] = useState<Declaration[]>([]);
-
-  const search = async () => {
-    try {
-      const response = await fetch("http://localhost:8080/declarations");
-      const data = await response.json();
-      setDeclarations(data);
-    } catch (error) {
-      console.error("Error fetching declarations:", error);
-    }
-  };
-
-  useEffect(() => {
-    search();
-  }, []);
+  const { declarations } = useDeclarations();
 
   return (
     <main>
