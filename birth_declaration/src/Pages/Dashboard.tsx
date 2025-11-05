@@ -3,9 +3,19 @@ import Card_parent from "../components/Card_parent";
 import Top_bar from "../components/Top_bar";
 import useDeclarations from "../hooks/use-declarations/useDeclarations";
 import NoDeclaration from "../components/noDeclaration";
+import { useState } from "react";
 
 function Dashboard() {
   const { declarations } = useDeclarations();
+  const [filterCriteria, setfilterCriteria] = useState("All Status");
+
+  const declarationFiltered =
+    filterCriteria === "All Status"
+      ? declarations
+      : declarations.filter(
+          (declaration) => declaration.status === filterCriteria.toLowerCase()
+        );
+  console.log(declarationFiltered);
 
   if (declarations.length === 0) {
     return (
@@ -19,7 +29,11 @@ function Dashboard() {
       <main>
         <Top_bar />
         <Card_parent declarations={declarations} />
-        <All_declarations declarations={declarations} />
+        <All_declarations
+          declarations={declarationFiltered}
+          setfilterCriteria={setfilterCriteria}
+          filterCriteria={filterCriteria}
+        />
       </main>
     );
   }

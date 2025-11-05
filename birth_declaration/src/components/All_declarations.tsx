@@ -2,12 +2,15 @@ import { CirclePlus } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
 import { Link } from "react-router-dom";
 import type { Declaration } from "@/Types/Declaration";
+import Select from "../UI Components/Select";
 
 type Props = {
   declarations: Declaration[];
+  setfilterCriteria: (value: string) => void;
+  filterCriteria: string;
 };
 
-function All_declarations({ declarations }: Props) {
+function All_declarations({ declarations, setfilterCriteria }: Props) {
   return (
     <>
       <div className="flex justify-center m-5 ">
@@ -18,6 +21,21 @@ function All_declarations({ declarations }: Props) {
                 Birth Declarations
               </h1>
               <h2 className="text-gray-500 text-lg">Manage your Submissions</h2>
+              <div className="flex gap-5 mt-5">
+                <input
+                  type="text"
+                  placeholder="search declarations..."
+                  className="border border-black/10 py-3 px-10 rounded-xl bg-white w-100"
+                />
+                <Select
+                  option1="All Status"
+                  option2="Draft"
+                  option3="Pending"
+                  option4="Approved"
+                  option5="Rejected"
+                  onChange={(value) => setfilterCriteria(value)}
+                />
+              </div>
             </div>
             <div className="ml-auto flex items-center">
               <Link
