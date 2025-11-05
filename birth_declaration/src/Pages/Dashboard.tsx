@@ -32,7 +32,8 @@ function Dashboard() {
         <All_declarations
           declarations={declarationFiltered}
           setfilterCriteria={setfilterCriteria}
-          filterCriteria={filterCriteria}
+          heading="Your Declarations"
+          subHeading="Search and filter through all your birth declarations"
         />
       </main>
     );

@@ -1,4 +1,4 @@
-import { CirclePlus } from "lucide-react";
+import { CirclePlus, FileText } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
 import { Link } from "react-router-dom";
 import type { Declaration } from "@/Types/Declaration";
@@ -7,25 +7,34 @@ import Select from "../UI Components/Select";
 type Props = {
   declarations: Declaration[];
   setfilterCriteria: (value: string) => void;
-  filterCriteria: string;
+  heading: string;
+  subHeading: string;
 };
 
-function All_declarations({ declarations, setfilterCriteria }: Props) {
+function All_declarations({
+  declarations,
+  setfilterCriteria,
+  heading,
+  subHeading,
+}: Props) {
   return (
     <>
       <div className="flex justify-center m-5 ">
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col shadow-xl bg-[#fafafa]">
           <div className="flex">
             <div>
-              <h1 className="text-2xl font-semibold mb-1">
-                Birth Declarations
+              <h1 className="text-2xl font-semibold mb-1 flex gap-3 items-center">
+                <FileText />
+                {heading}
               </h1>
-              <h2 className="text-gray-500 text-lg">Manage your Submissions</h2>
+              <h2 className="text-gray-500 text-base font-light">
+                {subHeading}
+              </h2>
               <div className="flex gap-5 mt-5">
                 <input
                   type="text"
-                  placeholder="search declarations..."
-                  className="border border-black/10 py-3 px-10 rounded-xl bg-white w-100"
+                  placeholder="search by name, parent or ID..."
+                  className="border border-black/10 py-0 px-10 rounded-xl bg-white w-100"
                 />
                 <Select
                   option1="All Status"
