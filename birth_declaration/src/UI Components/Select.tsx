@@ -24,7 +24,7 @@ function Select({
       <div>
         {type && <h1 className="mb-3 text-sm">{type}</h1>}
         <select
-          className="border rounded-lg w-full border-black/10 bg-white p-2"
+          className="border rounded-lg w-full p-2 border-black/10 bg-white"
           onChange={(e) => onChange?.(e.target.value)}
         >
           <option>{option1}</option>

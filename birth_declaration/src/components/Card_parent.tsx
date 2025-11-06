@@ -29,8 +29,8 @@ function Card_parent({ declarations }: Props) {
 
   return (
     <>
-      <div className="flex justify-center pt-10 mx-5 ">
-        <div className="w-full  grid grid-cols-4 gap-5">
+      <div className="flex justify-center my-8 mx-5 ">
+        <div className="grid-cols-2 w-full gap-5 grid lg:grid-cols-4 ">
           <Card_element
             head="All"
             total={total}

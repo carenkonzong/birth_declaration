@@ -4,6 +4,9 @@ import Top_bar from "../components/Top_bar";
 import useDeclarations from "../hooks/use-declarations/useDeclarations";
 import NoDeclaration from "../components/noDeclaration";
 import { useState } from "react";
+import NewDeclarationButton from "../UI Components/newDeclarationButton";
+import Button from "../UI Components/Button";
+import { FileText } from "lucide-react";
 
 function Dashboard() {
   const { declarations } = useDeclarations();
@@ -28,6 +31,10 @@ function Dashboard() {
     return (
       <main>
         <Top_bar />
+        <div className="flex gap-5 mt-8 ml-5">
+          <NewDeclarationButton />
+          <Button btnHead="View All Declarations" icon={FileText} link="/" />
+        </div>
         <Card_parent declarations={declarations} />
         <All_declarations
           declarations={declarationFiltered}

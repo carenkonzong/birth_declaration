@@ -1,6 +1,6 @@
-import { CirclePlus, FileText } from "lucide-react";
+import { /* CirclePlus */ FileText } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 import type { Declaration } from "@/Types/Declaration";
 import Select from "../UI Components/Select";
 
@@ -46,7 +46,7 @@ function All_declarations({
                 />
               </div>
             </div>
-            <div className="ml-auto flex items-center">
+            {/* <div className="ml-auto flex items-center">
               <Link
                 to="/new_declaration"
                 className="cursor-pointer px-6 py-3 rounded-xl text-white flex bg-gradient-to-r from-[#3582f8] via-[#a25de3] to-[#23bf72] "
@@ -56,7 +56,7 @@ function All_declarations({
                 </div>
                 New Declaration
               </Link>
-            </div>
+            </div> */}
           </div>
           <div>
             {declarations.map(
