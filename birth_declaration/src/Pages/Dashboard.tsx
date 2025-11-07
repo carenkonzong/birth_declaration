@@ -18,7 +18,6 @@ function Dashboard() {
       : declarations.filter(
           (declaration) => declaration.status === filterCriteria.toLowerCase()
         );
-  console.log(declarationFiltered);
 
   if (declarations.length === 0) {
     return (
