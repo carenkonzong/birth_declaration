@@ -4,9 +4,9 @@ import Root from "./Routes/root";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import ErrorPage from "./components/error_page";
-import New_declaration_page from "./Pages/New_declaration_page";
 import Dashboard from "./Pages/Dashboard";
 import Declaration_detail from "./components/declaration_detail";
+import New_declaration_page from "./Pages/New_declaration_page";
 
 const router = createBrowserRouter([
   {

@@ -5,16 +5,21 @@ type Props = {
   head: string;
   placeholder?: string;
   icon?: LucideIcon;
+  id?: string;
+  htmlfor?: string;
 };
 
-function Input({ head, type, placeholder }: Props) {
+function Input({ head, type, placeholder, id, htmlfor }: Props) {
   return (
     <div className="mb-5">
-      <h3 className="mb-3 text-sm">{head}</h3>
+      <label className="text-sm" htmlFor={htmlfor}>
+        {head}
+      </label>
       <input
         type={type}
         placeholder={placeholder}
-        className="border rounded-lg w-full border-black/10 bg-white p-2"
+        id={id}
+        className="border rounded-lg w-full border-black/10 bg-white p-2 mt-3"
       ></input>
     </div>
   );

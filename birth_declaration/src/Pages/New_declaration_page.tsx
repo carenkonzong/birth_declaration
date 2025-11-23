@@ -17,17 +17,29 @@ function New_declaration_page() {
         subhead="Basic details about the child"
       >
         <div className="grid grid-cols-2 gap-10">
-          <Input type="text" head="First Name *" />
-          <Input type="text" head="First Name *" />
+          <Input
+            type="text"
+            head="First Name *"
+            id="firstName"
+            htmlfor="firstName"
+          />
+          <Input
+            type="text"
+            head="Last Name *"
+            id="lastName"
+            htmlfor="lastName"
+          />
         </div>
         <div className="grid grid-cols-2 gap-10">
-          <Input type="date" head="Date of Birth *" />
+          <Input type="date" head="Date of Birth *" id="dob" htmlfor="dob" />
           <Select option1="Male" option2="Female" type="Gender *" />
         </div>
         <div>
           <Input
             type="text"
             head="Place of Birth *"
+            id="pob"
+            htmlfor="pob"
             placeholder="Hospital name or location"
           />
         </div>
@@ -38,12 +50,33 @@ function New_declaration_page() {
         subhead="Details about the Father"
       >
         <div className="grid grid-cols-2 gap-10">
-          <Input type="text" head="First Name *" />
-          <Input type="text" head="First Name *" />
+          <Input
+            type="text"
+            head="First Name *"
+            id="fatherFirstName"
+            htmlfor="fatherFirstName"
+          />
+          <Input
+            type="text"
+            head="Last Name *"
+            id="fatherLastName"
+            htmlfor="fatherLastName"
+          />
         </div>
         <div className="grid grid-cols-2 gap-10">
-          <Input type="text" head="ID Number *" />
-          <Input type="text" head="Occupation" placeholder="Optional" />
+          <Input
+            type="text"
+            head="ID Number *"
+            id="idNumber"
+            htmlfor="idNumber"
+          />
+          <Input
+            type="text"
+            head="Occupation"
+            placeholder="Optional"
+            id="occupation"
+            htmlfor="occupation"
+          />
         </div>
       </New_Declaration_element>
 
@@ -52,12 +85,33 @@ function New_declaration_page() {
         subhead="Details about the Mother"
       >
         <div className="grid grid-cols-2 gap-10">
-          <Input type="text" head="First Name *" />
-          <Input type="text" head="First Name *" />
+          <Input
+            type="text"
+            head="First Name *"
+            id="motherFirstName"
+            htmlfor="motherFirstName"
+          />
+          <Input
+            type="text"
+            head="Last Name *"
+            id="motherLastName"
+            htmlfor="motherLastName"
+          />
         </div>
         <div className="grid grid-cols-2 gap-10">
-          <Input type="text" head="ID Number *" />
-          <Input type="text" head="Occupation" placeholder="Optional" />
+          <Input
+            type="text"
+            head="ID Number *"
+            id="motherIdNumber"
+            htmlfor="motherIdNumber"
+          />
+          <Input
+            type="text"
+            head="Occupation"
+            placeholder="Optional"
+            id="motherOccupation"
+            htmlfor="motherOccupation"
+          />
         </div>
       </New_Declaration_element>
 
@@ -66,18 +120,32 @@ function New_declaration_page() {
         subhead="Details about the person making this declaration"
       >
         <div className="grid grid-cols-2 gap-10">
-          <Input type="text" head="First Name *" />
-          <Input type="text" head="First Name *" />
+          <Input
+            type="text"
+            head="First Name *"
+            id="informantFirstName"
+            htmlfor="informantFirstName"
+          />
+          <Input
+            type="text"
+            head="First Name *"
+            id="informantLastName"
+            htmlfor="informantLastName"
+          />
         </div>
         <div className="grid grid-cols-2 gap-10">
           <Input
             type="text"
             head="Relationship to Child *"
+            id="relationship"
+            htmlfor="relationship"
             placeholder="e.g., Father, Mother, Guardian"
           />
           <Input
             type="text"
             head="Contact Information *"
+            id="contact"
+            htmlfor="contact"
             placeholder="Phone number or email"
           />
         </div>
