@@ -4,7 +4,7 @@ import Button from "../UI Components/Button";
 function Bottom() {
   return (
     <div className="flex justify-center mb-5">
-      <div className="max-w-[1024px] bg-[#fbfbfb] border w-full p-5 shadow-lg rounded-2xl border-black/10 flex justify-between">
+      <div className="max-w-5xl bg-[#fbfbfb] border w-full p-5 shadow-lg rounded-2xl border-black/10 flex justify-between">
         <Button btnHead="Save as Draft" icon={Save} link="" />
         <Button
           btnHead="Submit Declaration"

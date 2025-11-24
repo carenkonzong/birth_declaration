@@ -11,7 +11,7 @@ type Props = {
 
 function Input({ head, type, placeholder, id, htmlfor }: Props) {
   return (
-    <div className="mb-5">
+    <div className="mt-5">
       <label className="text-sm" htmlFor={htmlfor}>
         {head}
       </label>

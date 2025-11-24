@@ -33,7 +33,7 @@ function Select({
 }: Props) {
   return (
     <>
-      <div>
+      <div className="mt-5">
         {type && <h1 className="mb-4 text-sm">{type}</h1>}
         <select
           className="border rounded-lg w-full p-2 border-black/10 bg-white"
