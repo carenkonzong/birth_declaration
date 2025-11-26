@@ -1,12 +1,11 @@
-import type { Profile } from "./Profile";
+import type { Profile, parentProfile, declarantProfile } from "./Profile";
 
 export type Declaration = {
-  id: string;
   submittedAt: string;
   status: string;
-  declarationId: string;
+  declarationId?: string;
   child: Profile;
-  father: Profile;
-  mother: Profile;
-  declarant: Profile;
+  father: parentProfile;
+  mother: parentProfile;
+  declarant: declarantProfile;
 };

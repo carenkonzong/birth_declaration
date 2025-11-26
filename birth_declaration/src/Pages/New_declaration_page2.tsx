@@ -2,16 +2,65 @@ import { ArrowLeft, Send, Save } from "lucide-react";
 import Heading from "../components/Heading";
 import Button from "../UI Components/Button";
 import { type SubmitHandler, useForm } from "react-hook-form";
-import type { Profile } from "@/Types/Profile";
+import type { Declaration } from "@/Types/Declaration";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const REQUIRED_FIELD = "This Field is required";
+const schema = yup
+  .object({
+    status: yup.string().required(REQUIRED_FIELD).default("submitted"),
+    submittedAt: yup
+      .string()
+      .required(REQUIRED_FIELD)
+      .default(
+        new Date().toLocaleDateString("en-US", {
+          month: "2-digit",
+          day: "2-digit",
+          year: "numeric",
+        })
+      ),
+    child: yup.object({
+      firstName: yup.string().required(REQUIRED_FIELD),
+      lastName: yup.string().required(REQUIRED_FIELD),
+      dateOfBirth: yup.string().required(REQUIRED_FIELD),
+      gender: yup.string().required(REQUIRED_FIELD),
+      placeOfBirth: yup.object({
+        hospital: yup.string().required(REQUIRED_FIELD),
+      }),
+    }),
+    father: yup.object({
+      firstName: yup.string().required(REQUIRED_FIELD),
+      lastName: yup.string().required(REQUIRED_FIELD),
+      nationalId: yup.string().required(REQUIRED_FIELD),
+      occupation: yup.string(),
+    }),
+    mother: yup.object({
+      firstName: yup.string().required(REQUIRED_FIELD),
+      lastName: yup.string().required(REQUIRED_FIELD),
+      nationalId: yup.string().required(REQUIRED_FIELD),
+      occupation: yup.string(),
+    }),
+    declarant: yup.object({
+      firstName: yup.string().required(REQUIRED_FIELD),
+      lastName: yup.string().required(REQUIRED_FIELD),
+      relationshipToChild: yup.string().required(REQUIRED_FIELD),
+      phone: yup.string().required(REQUIRED_FIELD),
+      addInfo: yup.string(),
+    }),
+  })
+  .required();
 
 function New_declaration_page2() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Profile>();
+  } = useForm<Declaration>({
+    resolver: yupResolver(schema),
+  });
 
-  const onSubmit: SubmitHandler<Profile> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Declaration> = (data) => console.log(data);
 
   return (
     <>
@@ -35,13 +84,11 @@ function New_declaration_page2() {
                   type="text"
                   id="firstName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("firstName", { required: true })}
+                  {...register("child.firstName")}
                 />
-                {errors.firstName && (
-                  <span className="text-red-400 text-xs">
-                    First Name is required
-                  </span>
-                )}
+                <span className="text-red-400 text-xs">
+                  {errors.child?.firstName?.message}
+                </span>
               </div>
               <div className="mt-5">
                 <label htmlFor="lastName" className="text-sm">
@@ -51,13 +98,11 @@ function New_declaration_page2() {
                   type="text"
                   id="lastName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("lastName", { required: true })}
+                  {...register("child.lastName")}
                 />
-                {errors.lastName && (
-                  <span className="text-red-400 text-xs">
-                    Last Name is required
-                  </span>
-                )}
+                <span className="text-red-400 text-xs">
+                  {errors.child?.lastName?.message}
+                </span>
               </div>
               <div className="mt-5">
                 <label htmlFor="dob" className="text-sm">
@@ -67,13 +112,12 @@ function New_declaration_page2() {
                   type="date"
                   id="dob"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("dateOfBirth", { required: true })}
+                  {...register("child.dateOfBirth")}
                 />
-                {errors.dateOfBirth && (
-                  <span className="text-red-400 text-xs">
-                    Date of Birth is required
-                  </span>
-                )}
+
+                <span className="text-red-400 text-xs">
+                  {errors.child?.dateOfBirth?.message}
+                </span>
               </div>
               <div className="mt-5">
                 <label htmlFor="gender" className="text-sm">
@@ -82,17 +126,16 @@ function New_declaration_page2() {
                 <select
                   id="gender"
                   className="border rounded-lg w-full p-2 mt-2 border-black/10 bg-white"
-                  {...register("gender", { required: true })}
+                  {...register("child.gender")}
                 >
                   <option value=""></option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                 </select>
-                {errors.gender && (
-                  <span className="text-red-400 text-xs">
-                    Gender is required
-                  </span>
-                )}
+
+                <span className="text-red-400 text-xs">
+                  {errors.child?.gender?.message}
+                </span>
               </div>
             </div>
           </div>
@@ -112,7 +155,7 @@ function New_declaration_page2() {
                   type="text"
                   id="fatherFirstName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("firstName", { required: true })}
+                  {...register("firstName")}
                 />
                 {errors.firstName && (
                   <span className="text-red-400 text-xs">
@@ -128,7 +171,7 @@ function New_declaration_page2() {
                   type="text"
                   id="fatherLastName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("firstName", { required: true })}
+                  {...register("firstName")}
                 />
                 {errors.firstName && (
                   <span className="text-red-400 text-xs">
@@ -144,7 +187,7 @@ function New_declaration_page2() {
                   type="text"
                   id="idnum"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("nationalId", { required: true })}
+                  {...register("nationalId")}
                 />
                 {errors.nationalId && (
                   <span className="text-red-400 text-xs">
@@ -152,12 +195,26 @@ function New_declaration_page2() {
                   </span>
                 )}
               </div>
+              <div className="mt-5">
+                <label htmlFor="idnum" className="text-sm">
+                  Occupation
+                </label>
+                <input
+                  type="text"
+                  id="idnum"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("nationalId")}
+                />
+              </div>
             </div>
           </div>
         </div> */}
         <div className="flex justify-center mb-5">
           <div className="max-w-5xl bg-[#fbfbfb] border w-full p-5 shadow-lg rounded-2xl border-black/10 flex justify-between">
-            <button className="px-6 py-3 rounded-xl transition-all duration-300 border border-black/10 hover:-translate-y-1 hover:shadow-lg flex  cursor-pointer ">
+            <button
+              type="submit"
+              className="px-6 py-3 rounded-xl transition-all duration-300 border border-black/10 hover:-translate-y-1 hover:shadow-lg flex  cursor-pointer "
+            >
               <Save className="mr-3 flex items-center" />
               Save as Draft
             </button>

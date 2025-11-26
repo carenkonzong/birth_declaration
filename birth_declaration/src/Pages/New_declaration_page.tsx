@@ -2,8 +2,12 @@ import New_Declaration_element from "../components/New_Declaration_element";
 import Input from "../UI Components/Input";
 import Select from "../UI Components/Select";
 import Heading from "../components/Heading";
+import Bottom from "../components/Bottom";
 import Button from "../UI Components/Button";
 import { ArrowLeft, Send, Save } from "lucide-react";
+import { useForm } from "react-hook-form";
+import type { Profile } from "@/Types/Profile";
+import type { SubmitHandler } from "react-hook-form";
 
 function New_declaration_page() {
   const {
@@ -11,7 +15,6 @@ function New_declaration_page() {
     handleSubmit,
     formState: { errors },
   } = useForm<Profile>();
-
   const onSubmit: SubmitHandler<Profile> = (data) => console.log(data);
 
   return (
@@ -20,7 +23,10 @@ function New_declaration_page() {
         <Button btnHead="Back to Dashboard" icon={ArrowLeft} link="/" />
       </Heading>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <New_Declaration_element head="" subhead="">
+        <New_Declaration_element
+          head="Child Information"
+          subhead="Basic details about the child"
+        >
           <div className="grid grid-cols-2 gap-10">
             <div>
               <Input
@@ -36,20 +42,18 @@ function New_declaration_page() {
                 </span>
               )}
             </div>
-            <div>
-              <Input
-                type="text"
-                head="Last Name *"
-                id="lastName"
-                htmlfor="lastName"
-                {...register("lastName", { required: true })}
-              />
-              {errors.lastName && (
-                <span className="text-red-400 text-xs">
-                  Last Name is required
-                </span>
-              )}
-            </div>
+            <Input
+              type="text"
+              head="Last Name *"
+              id="lastName"
+              htmlfor="lastName"
+              {...register("firstName", { required: true })}
+            />
+            {errors.firstName && (
+              <span className="text-red-400 text-xs">
+                First Name is required
+              </span>
+            )}
           </div>
           <div className="grid grid-cols-2 gap-10">
             <Input type="date" head="Date of Birth *" id="dob" htmlfor="dob" />

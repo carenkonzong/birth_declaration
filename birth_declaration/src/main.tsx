@@ -7,6 +7,7 @@ import ErrorPage from "./components/error_page";
 import Dashboard from "./Pages/Dashboard";
 import Declaration_detail from "./components/declaration_detail";
 import New_declaration_page2 from "./Pages/New_declaration_page2";
+import New_declaration_page from "./Pages/New_declaration_page";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,12 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/new_declaration",
+        path: "/new_declaration2",
         element: <New_declaration_page2 />,
+      },
+      {
+        path: "/new_declaration",
+        element: <New_declaration_page />,
       },
       {
         path: "/details",
