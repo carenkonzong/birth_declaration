@@ -25,9 +25,7 @@ const schema = yup
       lastName: yup.string().required(REQUIRED_FIELD),
       dateOfBirth: yup.string().required(REQUIRED_FIELD),
       gender: yup.string().required(REQUIRED_FIELD),
-      placeOfBirth: yup.object({
-        hospital: yup.string().required(REQUIRED_FIELD),
-      }),
+      placeOfBirth: yup.string().required(REQUIRED_FIELD),
     }),
     father: yup.object({
       firstName: yup.string().required(REQUIRED_FIELD),
@@ -45,7 +43,7 @@ const schema = yup
       firstName: yup.string().required(REQUIRED_FIELD),
       lastName: yup.string().required(REQUIRED_FIELD),
       relationshipToChild: yup.string().required(REQUIRED_FIELD),
-      phone: yup.string().required(REQUIRED_FIELD),
+      email: yup.string().required(REQUIRED_FIELD),
       addInfo: yup.string(),
     }),
   })
@@ -138,9 +136,23 @@ function New_declaration_page2() {
                 </span>
               </div>
             </div>
+            <div className="mt-5">
+              <label htmlFor="placeOfBirth" className="text-sm">
+                Place of Birth *
+              </label>
+              <input
+                type="text"
+                id="placeOfBirth"
+                className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                {...register("child.placeOfBirth")}
+              />
+              <span className="text-red-400 text-xs">
+                {errors.child?.placeOfBirth?.message}
+              </span>
+            </div>
           </div>
         </div>
-        {/* <div className="flex justify-center pt-5 mb-5 mx-5">
+        <div className="flex justify-center pt-5 mb-5 mx-5">
           <div className="max-w-5xl bg-[#fbfbfb] border w-full p-8 shadow-lg rounded-2xl border-black/10">
             <h1 className="text-xl font-medium ">Father Information</h1>
             <h2 className="text-sm mb- text-gray-500">
@@ -155,13 +167,12 @@ function New_declaration_page2() {
                   type="text"
                   id="fatherFirstName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("firstName")}
+                  {...register("father.firstName")}
                 />
-                {errors.firstName && (
-                  <span className="text-red-400 text-xs">
-                    First Name is required
-                  </span>
-                )}
+
+                <span className="text-red-400 text-xs">
+                  {errors.father?.firstName?.message}
+                </span>
               </div>
               <div className="mt-5">
                 <label htmlFor="fatherLastName" className="text-sm">
@@ -171,13 +182,12 @@ function New_declaration_page2() {
                   type="text"
                   id="fatherLastName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("firstName")}
+                  {...register("father.lastName")}
                 />
-                {errors.firstName && (
-                  <span className="text-red-400 text-xs">
-                    Last Name is required
-                  </span>
-                )}
+
+                <span className="text-red-400 text-xs">
+                  {errors.father?.lastName?.message}
+                </span>
               </div>
               <div className="mt-5">
                 <label htmlFor="idnum" className="text-sm">
@@ -187,28 +197,178 @@ function New_declaration_page2() {
                   type="text"
                   id="idnum"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("nationalId")}
+                  {...register("father.nationalId")}
                 />
-                {errors.nationalId && (
-                  <span className="text-red-400 text-xs">
-                    ID Number is required
-                  </span>
-                )}
+
+                <span className="text-red-400 text-xs">
+                  {errors.father?.nationalId?.message}
+                </span>
               </div>
               <div className="mt-5">
-                <label htmlFor="idnum" className="text-sm">
+                <label htmlFor="occupation" className="text-sm">
                   Occupation
                 </label>
                 <input
                   type="text"
-                  id="idnum"
+                  id="occupation"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
-                  {...register("nationalId")}
+                  {...register("father.occupation")}
                 />
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
+        <div className="flex justify-center pt-5 mb-5 mx-5">
+          <div className="max-w-5xl bg-[#fbfbfb] border w-full p-8 shadow-lg rounded-2xl border-black/10">
+            <h1 className="text-xl font-medium ">Mother Information</h1>
+            <h2 className="text-sm mb- text-gray-500">
+              Details about the Mother
+            </h2>
+            <div className="grid grid-cols-2 gap-x-10">
+              <div className="mt-5">
+                <label htmlFor="motherFirstName" className="text-sm">
+                  First Name *
+                </label>
+                <input
+                  type="text"
+                  id="motherFirstName"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("mother.firstName")}
+                />
+
+                <span className="text-red-400 text-xs">
+                  {errors.mother?.firstName?.message}
+                </span>
+              </div>
+              <div className="mt-5">
+                <label htmlFor="motherLastName" className="text-sm">
+                  Last Name *
+                </label>
+                <input
+                  type="text"
+                  id="motherLastName"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("mother.lastName")}
+                />
+
+                <span className="text-red-400 text-xs">
+                  {errors.mother?.lastName?.message}
+                </span>
+              </div>
+              <div className="mt-5">
+                <label htmlFor="motherIdNum" className="text-sm">
+                  ID Number *
+                </label>
+                <input
+                  type="text"
+                  id="motherIdNum"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("mother.nationalId")}
+                />
+
+                <span className="text-red-400 text-xs">
+                  {errors.mother?.nationalId?.message}
+                </span>
+              </div>
+              <div className="mt-5">
+                <label htmlFor="motherOccupation" className="text-sm">
+                  Occupation
+                </label>
+                <input
+                  type="text"
+                  id="motherOccupation"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("mother.occupation")}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center pt-5 mb-5 mx-5">
+          <div className="max-w-5xl bg-[#fbfbfb] border w-full p-8 shadow-lg rounded-2xl border-black/10">
+            <h1 className="text-xl font-medium ">Informant Information</h1>
+            <h2 className="text-sm mb- text-gray-500">
+              Details about the person making this declaration
+            </h2>
+            <div className="grid grid-cols-2 gap-x-10">
+              <div className="mt-5">
+                <label htmlFor="declarantFirstName" className="text-sm">
+                  First Name *
+                </label>
+                <input
+                  type="text"
+                  id="declarantFirstName"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("declarant.firstName")}
+                />
+
+                <span className="text-red-400 text-xs">
+                  {errors.declarant?.firstName?.message}
+                </span>
+              </div>
+              <div className="mt-5">
+                <label htmlFor="declarantLastName" className="text-sm">
+                  Last Name *
+                </label>
+                <input
+                  type="text"
+                  id="declarantLastName"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("declarant.lastName")}
+                />
+
+                <span className="text-red-400 text-xs">
+                  {errors.declarant?.lastName?.message}
+                </span>
+              </div>
+              <div className="mt-5">
+                <label htmlFor="relationship" className="text-sm">
+                  Relationship to Child *
+                </label>
+                <input
+                  type="text"
+                  id="relationship"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("declarant.relationshipToChild")}
+                />
+
+                <span className="text-red-400 text-xs">
+                  {errors.declarant?.relationshipToChild?.message}
+                </span>
+              </div>
+              <div className="mt-5">
+                <label htmlFor="contact" className="text-sm">
+                  Contact Information *
+                </label>
+                <input
+                  type="text"
+                  id="contact"
+                  placeholder="Email address"
+                  className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                  {...register("declarant.email")}
+                />
+                <span className="text-red-400 text-xs">
+                  {errors.declarant?.email?.message}
+                </span>
+              </div>
+            </div>
+            <div className="mt-5">
+              <label htmlFor="addInfo" className="text-sm">
+                Additional information
+              </label>
+              <textarea
+                id="addInfo"
+                placeholder="Any additional information (optional)"
+                className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
+                rows={5}
+                {...register("declarant.addInfo")}
+              />
+              <span className="text-red-400 text-xs">
+                {errors.declarant?.addInfo?.message}
+              </span>
+            </div>
+          </div>
+        </div>
         <div className="flex justify-center mb-5">
           <div className="max-w-5xl bg-[#fbfbfb] border w-full p-5 shadow-lg rounded-2xl border-black/10 flex justify-between">
             <button

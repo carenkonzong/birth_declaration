@@ -1,12 +1,9 @@
 export type Profile = {
   firstName: string;
   lastName: string;
-  fullName?: string;
   gender: string;
   dateOfBirth: string;
-  placeOfBirth: {
-    hospital: string;
-  };
+  placeOfBirth: string;
 };
 
 export type parentProfile = {
@@ -20,6 +17,6 @@ export type declarantProfile = {
   firstName: string;
   lastName: string;
   relationshipToChild: string;
-  phone: string;
+  email: string;
   addInfo?: string;
 };
