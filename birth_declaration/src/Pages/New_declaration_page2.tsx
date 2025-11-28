@@ -75,12 +75,12 @@ function New_declaration_page2() {
             </h2>
             <div className="grid grid-cols-2 gap-x-10">
               <div className="mt-5">
-                <label htmlFor="firstName" className="text-sm">
+                <label htmlFor="childFirstName" className="text-sm">
                   First Name *
                 </label>
                 <input
                   type="text"
-                  id="firstName"
+                  id="firstchildFirstNameName"
                   className="border rounded-lg w-full border-black/10 bg-white p-2 mt-2"
                   {...register("child.firstName")}
                 />

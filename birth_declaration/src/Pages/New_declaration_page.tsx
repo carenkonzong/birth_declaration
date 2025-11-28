@@ -2,7 +2,6 @@ import New_Declaration_element from "../components/New_Declaration_element";
 import Input from "../UI Components/Input";
 import Select from "../UI Components/Select";
 import Heading from "../components/Heading";
-import Bottom from "../components/Bottom";
 import Button from "../UI Components/Button";
 import { ArrowLeft, Send, Save } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -165,7 +164,7 @@ function New_declaration_page() {
             />
             <Input
               type="text"
-              head="Contact Information *"
+              head="`Contact Information *`"
               id="contact"
               htmlfor="contact"
               placeholder="Phone number or email"
