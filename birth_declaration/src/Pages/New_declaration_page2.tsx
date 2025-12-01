@@ -5,6 +5,7 @@ import { type SubmitHandler, useForm } from "react-hook-form";
 import type { Declaration } from "@/Types/Declaration";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { create } from "../services/index";
 
 const REQUIRED_FIELD = "This Field is required";
 const schema = yup
@@ -53,12 +54,21 @@ function New_declaration_page2() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Declaration>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit: SubmitHandler<Declaration> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Declaration> = async (data) => {
+    const response = await create("declarations", data);
+    console.log(response);
+    if (response.status === 201) {
+      console.log(response);
+      console.log(data);
+      reset();
+    }
+  };
 
   return (
     <>

@@ -5,7 +5,7 @@ function NewDeclarationButton() {
   return (
     <div className="flex items-center">
       <Link
-        to="/new_declaration"
+        to="/new_declaration2"
         className="cursor-pointer px-6 py-3 rounded-xl text-white flex bg-linear-to-r from-[#3582f8] via-[#a25de3] to-[#23bf72] "
       >
         <div className="mr-3 flex items-center">
