@@ -19,5 +19,5 @@ export type declarantProfile = {
   relationshipToChild: string;
   email: string;
   addInfo?: string;
-  fullName: string;
+  fullName?: string;
 };

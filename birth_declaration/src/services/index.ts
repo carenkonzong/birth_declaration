@@ -6,9 +6,8 @@ const create = async (url: string, body: any) => {
     headers: {
       accept: "application/json",
       "content-type": "application/json",
-
-      body: JSON.stringify(body),
     },
+    body: JSON.stringify(body),
   });
   return response;
 };

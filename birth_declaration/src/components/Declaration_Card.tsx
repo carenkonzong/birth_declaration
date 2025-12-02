@@ -15,8 +15,10 @@ type Props = {
   birthDate?: string;
   status?: string;
   submitionDate: string;
-  father: string;
-  mother: string;
+  fatherFirstName: string;
+  fatherLastName: string;
+  motherFirstName: string;
+  motherLastName: string;
 };
 
 function Declaration_Card({
@@ -26,8 +28,10 @@ function Declaration_Card({
   id,
   status,
   submitionDate,
-  father,
-  mother,
+  fatherFirstName,
+  fatherLastName,
+  motherFirstName,
+  motherLastName,
 }: Props) {
   const renderStatus = () => {
     switch (status) {
@@ -42,7 +46,7 @@ function Declaration_Card({
       case "PENDING":
         return (
           <Declaration_status
-            dStatus="SUBMITTED"
+            dStatus="PENDING"
             icon={Clock3}
             color="bg-[#14a5e8]"
           />
@@ -86,7 +90,8 @@ function Declaration_Card({
               Born: {birthDate}
             </h1>
             <h1 className="text-gray-500 text-sm font-extralight mb-5">
-              Father: {father} | Mother: {mother}
+              Father: {fatherFirstName} {fatherLastName} | Mother:{" "}
+              {motherFirstName} {motherLastName}
             </h1>
             <div className="flex items-center">
               <h1 className="text-gray-500 text-sm font-extralight mb-1 flex items-center mr-5">

@@ -73,19 +73,22 @@ function All_declarations({
               declarationId,
               child,
               father,
-              declarant,
+              mother,
               submittedAt,
               status,
+              id,
             }) => (
               <Declaration_Card
-                key={declarationId}
-                id={declarationId}
+                key={id}
+                id={declarationId || "Unknown ID"}
                 firstName={child.firstName}
                 lastName={child.lastName}
                 birthDate={child.dateOfBirth}
                 submitionDate={submittedAt}
-                father={father.firstName}
-                mother={declarant.fullName}
+                fatherFirstName={father.firstName}
+                fatherLastName={father.lastName}
+                motherFirstName={mother.firstName}
+                motherLastName={mother.lastName}
                 status={status.toUpperCase()}
               />
             )
