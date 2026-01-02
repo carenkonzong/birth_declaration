@@ -1,8 +1,8 @@
 import { /* CirclePlus */ FileText } from "lucide-react";
 import Declaration_Card from "./Declaration_Card";
 /* import { Link } from "react-router-dom"; */
-import type { Declaration } from "@/Types/Declaration";
-import Select from "../UI Components/Select";
+import type { Declaration } from "@/types/Declaration";
+import Select from "../ui/Select";
 
 type Props = {
   declarations: Declaration[];
@@ -55,17 +55,6 @@ function All_declarations({
               />
             </div>
           </div>
-          {/* <div className="ml-auto flex items-center">
-              <Link
-                to="/new_declaration"
-                className="cursor-pointer px-6 py-3 rounded-xl text-white flex bg-gradient-to-r from-[#3582f8] via-[#a25de3] to-[#23bf72] "
-              >
-                <div className="mr-3 flex items-center">
-                  <CirclePlus size={20} />
-                </div>
-                New Declaration
-              </Link>
-            </div> */}
         </div>
         <div>
           {declarations.map(
@@ -75,7 +64,7 @@ function All_declarations({
               father,
               mother,
               submittedAt,
-              status,
+              status = "draft",
               id,
             }) => (
               <Declaration_Card
