@@ -6,7 +6,7 @@ import {
   CircleDashed,
 } from "lucide-react";
 import { Link } from "react-router";
-import Declaration_status from "../UI Components/Declaration_status";
+import Declaration_status from "../ui/Declaration_status";
 
 type Props = {
   id: string;

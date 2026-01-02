@@ -3,7 +3,7 @@ import Top_bar from "./Top_bar";
 import Details from "./details";
 import Head from "./head";
 import { Calendar, MapPin, User, ArrowLeft } from "lucide-react";
-import Button from "../UI Components/Button";
+import Button from "../ui/Button";
 
 function Declaration_detail() {
   return (
