@@ -37,7 +37,7 @@
       "id": "DCL-10002",
       "declarationId": "DCL-10002",
       "submittedAt": "28/11/2023",
-      "status": "submitted",
+      "status": "pending",
       "child": {
         "firstName": "Olivia",
         "lastName": "Nguyen",
@@ -169,7 +169,7 @@
       "id": "DCL-10006",
       "declarationId": "DCL-10006",
       "submittedAt": "21/06/2023",
-      "status": "submitted",
+      "status": "pending",
       "child": {
         "firstName": "Emily",
         "lastName": "Johnson",
@@ -202,7 +202,7 @@
       "id": "DCL-10007",
       "declarationId": "DCL-10007",
       "submittedAt": "02/03/2024",
-      "status": "approved",
+      "status": "rejected",
       "child": {
         "firstName": "Ethan",
         "lastName": "O’Connor",
@@ -229,6 +229,106 @@
         "phone": "+1 6135559901",
         "addInfo": "Approved by civil registrar"
       }
+    }
+  ],
+  "users": [
+    {
+      "id": "USR-001",
+      "role": "admin",
+      "status": "active",
+      "firstName": "Jonathan",
+      "lastName": "Miller",
+      "email": "jonathan.miller@birthregistry.ca",
+      "phone": "+1 4165551001",
+      "city": "Toronto",
+      "province": "ON",
+      "country": "Canada",
+      "createdAt": "12/01/2023",
+      "lastLogin": "02/03/2024"
+    },
+    {
+      "id": "USR-002",
+      "role": "clerk",
+      "status": "active",
+      "firstName": "Sophie",
+      "lastName": "Tremblay",
+      "email": "sophie.tremblay@montrealregistry.ca",
+      "phone": "+1 5145552044",
+      "city": "Montreal",
+      "province": "QC",
+      "country": "Canada",
+      "createdAt": "05/04/2023",
+      "lastLogin": "01/03/2024"
+    },
+    {
+      "id": "USR-003",
+      "role": "clerk",
+      "status": "active",
+      "firstName": "Daniel",
+      "lastName": "Nguyen",
+      "email": "daniel.nguyen@peelregistry.ca",
+      "phone": "+1 9055553321",
+      "city": "Mississauga",
+      "province": "ON",
+      "country": "Canada",
+      "createdAt": "19/06/2023",
+      "lastLogin": "28/02/2024"
+    },
+    {
+      "id": "USR-004",
+      "role": "declarant",
+      "status": "active",
+      "firstName": "Neha",
+      "lastName": "Patel",
+      "email": "neha.patel@gmail.com",
+      "phone": "+1 6475554410",
+      "city": "Brampton",
+      "province": "ON",
+      "country": "Canada",
+      "createdAt": "14/08/2023",
+      "lastLogin": "15/08/2023"
+    },
+    {
+      "id": "USR-005",
+      "role": "declarant",
+      "status": "active",
+      "firstName": "Carlos",
+      "lastName": "Martinez",
+      "email": "carlos.martinez@yahoo.com",
+      "phone": "+1 6045557788",
+      "city": "Vancouver",
+      "province": "BC",
+      "country": "Canada",
+      "createdAt": "28/08/2023",
+      "lastLogin": "09/09/2023"
+    },
+    {
+      "id": "USR-006",
+      "role": "declarant",
+      "status": "inactive",
+      "firstName": "Lauren",
+      "lastName": "Johnson",
+      "email": "lauren.johnson@shaw.ca",
+      "phone": "+1 4035556642",
+      "city": "Calgary",
+      "province": "AB",
+      "country": "Canada",
+      "createdAt": "10/06/2023",
+      "lastLogin": "21/06/2023"
+    },
+    {
+      "id": "USR-007",
+      "role": "admin",
+      "status": "active",
+      "firstName": "Patrick",
+      "lastName": "O’Connor",
+      "email": "patrick.oconnor@ontarioregistry.ca",
+      "phone": "+1 6135559901",
+      "city": "Ottawa",
+      "province": "ON",
+      "country": "Canada",
+      "createdAt": "03/01/2022",
+      "lastLogin": "02/03/2024"
     }
   ]
 }
