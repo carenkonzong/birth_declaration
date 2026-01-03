@@ -1,11 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Root from "./Routes/root";
+import Root from "./routes/root";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import ErrorPage from "./components/error_page";
+import ErrorPage from "./components/Error_page";
 import Dashboard from "./Pages/Dashboard";
-import Declaration_detail from "./components/declaration_detail";
+import Declaration_detail from "./components/Declaration_detail";
 import New_declaration_page2 from "./Pages/New_declaration_page2";
 import New_declaration_page from "./Pages/New_declaration_page";
 
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <New_declaration_page />,
       },
       {
-        path: "/details",
+        path: "/details/:id",
         element: <Declaration_detail />,
       },
     ],
