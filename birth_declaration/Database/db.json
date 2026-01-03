@@ -10,30 +10,23 @@
         "lastName": "Morales",
         "gender": "Male",
         "dateOfBirth": "29/06/2022",
-        "placeOfBirth": {
-          "hospital": "Powers-Baker Hospital",
-          "address": "061 Sellers Vista Apt. 331, South Jasonville, Benin"
-        }
+        "cityOfBirth": "Brampton, ON"
       },
       "father": {
         "firstName": "James",
         "lastName": "Wright",
         "nationalId": "7873906689518",
-        "phone": "+237 678885924",
-        "email": "veronicagardner@richards-james.net"
+        "nationality": "canadian"
       },
       "mother": {
         "firstName": "Erika",
         "lastName": "Dunn",
         "nationalId": "5310421148285",
-        "phone": "+237 663777374",
-        "email": "kevinparker@yahoo.com"
+        "nationality": "canadian"
       },
       "declarant": {
         "relationshipToChild": "Mother",
         "fullName": "Patricia Hall DDS",
-        "nationalId": "1580315823374",
-        "address": "7677 Nicole Passage, South Richardfort, Christmas Island",
         "email": "lynchkrista@yahoo.com",
         "phone": "+237 691514270"
       }
