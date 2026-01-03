@@ -1,11 +1,11 @@
 import New_Declaration_element from "../components/New_Declaration_element";
-import Input from "../UI Components/Input";
-import Select from "../UI Components/Select";
+import Input from "../ui/Input";
+import Select from "../ui/Select";
 import Heading from "../components/Heading";
-import Button from "../UI Components/Button";
+import Button from "../ui/Button";
 import { ArrowLeft, Send, Save } from "lucide-react";
 import { useForm } from "react-hook-form";
-import type { Profile } from "@/Types/Profile";
+import type { Profile } from "@/types/Profile";
 import type { SubmitHandler } from "react-hook-form";
 
 function New_declaration_page() {
