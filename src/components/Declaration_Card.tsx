@@ -83,9 +83,9 @@ function Declaration_Card({
   return (
     <>
       <div className="flex justify-center mt-5 ">
-        <div className="flex w-full  p-5 border rounded-2xl border-black/10 bg-[#fbfbfb] hover:-translate-1 transition-all duration-300 hover:shadow-lg ">
+        <div className="flex w-full  p-5 border rounded-2xl border-black/10 bg-[#fbfbfb] hover:border-blue-700/10 hover:-translate-1 transition-all duration-300 hover:shadow-lg shadow-blue-700/10 group">
           <div className="flex flex-col ">
-            <h1 className="text-lg font-semibold mb-1">
+            <h1 className="text-lg font-semibold mb-1 transition-all duration-300 group-hover:text-blue-500">
               {firstName} {lastName}
             </h1>
             <h1 className="text-gray-500 text-sm font-extralight mb-">

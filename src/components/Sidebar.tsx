@@ -9,7 +9,7 @@ function Sidebar() {
       <aside className="bg-[#fbfbfb] border-r border-black/10 w-65 fixed flex flex-col h-full">
         <>
           <div className="flex justify-center mx-5 mb-5 mt-5">
-            <div className="flex flex-col py-8 px-5 my-2 bg-gradient-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px] shadow-xl">
+            <div className="flex flex-col py-8 px-5 my-2 bg-linear-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px] shadow-xl">
               <div className="flex flex-row mb-5">
                 <div className="flex items-center mr-3">
                   <Activity size={35} color="white" />
@@ -38,7 +38,7 @@ function Sidebar() {
             <ul>
               <li>
                 <Link
-                  className="flex px-3 text-sm py-2 rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer"
+                  className="flex px-3 text-sm py-2 rounded-2xl items-center shadow-blue-700/10 hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer"
                   to="/"
                 >
                   <House size={18} className="mr-5" />
@@ -48,7 +48,7 @@ function Sidebar() {
               <li>
                 <Link
                   to=""
-                  className="flex px-3 py-2 text-sm rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer"
+                  className="flex px-3 py-2 text-sm rounded-2xl shadow-blue-700/10 items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer"
                 >
                   <FileText size={18} className="mr-5" />
                   All Declarations
@@ -59,11 +59,11 @@ function Sidebar() {
           <div className="px-3">
             <h1 className="mb-5 px-3 text-sm">ACCOUNT</h1>
             <ul>
-              <li className="flex px-3 py-2 text-sm rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
+              <li className="flex px-3 py-2 text-sm rounded-2xl items-center shadow-blue-700/10 hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
                 <User size={18} className="mr-5" />
                 Profile
               </li>
-              <li className="flex px-3 py-2 text-sm rounded-2xl items-center hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
+              <li className="flex px-3 py-2 text-sm rounded-2xl items-center shadow-blue-700/10 hover:-translate-y-1 transition-all duration-300 hover:bg-[#f4f3f5] hover:text-black hover:shadow-md cursor-pointer">
                 <Bell size={18} className="mr-5" />
                 Notifications
               </li>
