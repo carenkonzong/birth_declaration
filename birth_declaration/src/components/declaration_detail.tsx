@@ -52,7 +52,7 @@ function Declaration_detail() {
   if (error) return <div>Error: {error}</div>;
   if (!singleDeclaration) return <div>No declaration found</div>;
 
-  const { child } = singleDeclaration;
+  const { child, father, mother } = singleDeclaration;
 
   return (
     <>
@@ -69,16 +69,20 @@ function Declaration_detail() {
           />
           <div className="grid grid-cols-2">
             <Details label="First Name" info={child.firstName} />
-            <Details label="Last Name" info="Anderson" />
+            <Details label="Last Name" info={child.lastName} />
           </div>
           <div className="grid grid-cols-2">
-            <Details label="Gender" info="Male" />
-            <Details label="Date of Birth" info="8/13/2024" icon={Calendar} />
+            <Details label="Gender" info={child.gender} />
+            <Details
+              label="Date of Birth"
+              info={child.dateOfBirth}
+              icon={Calendar}
+            />
           </div>
           <div>
             <Details
               label="Place of Birth"
-              info="Children's Hospital"
+              info={child.cityOfBirth}
               icon={MapPin}
             />
           </div>
@@ -87,14 +91,20 @@ function Declaration_detail() {
       <div className="flex justify-center pt-10 mx-5 gap-5">
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
           <Head head="Father Information" />
-          <Details label="Full Name" info="Andrew Anderson" />
-          <Details label="Date of Birth" info="9/27/1984" />
+          <Details
+            label="Full Name"
+            info={`${father.firstName} ${father.lastName}`}
+          />
+          <Details label="ID number" info={father.nationalId} />
           <Details label="Nationality" info="Canadian" />
         </div>
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
           <Head head="Mother Information" icon={User} />
-          <Details label="Full Name" info="Catherine Anderson" />
-          <Details label="Date of Birth" info="2/15/1988" />
+          <Details
+            label="Full Name"
+            info={`${mother.firstName} ${mother.lastName}`}
+          />
+          <Details label="ID number" info={mother.nationalId} />
           <Details label="Nationality" info="Canadian" />
         </div>
       </div>
