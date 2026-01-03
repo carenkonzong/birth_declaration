@@ -69,6 +69,7 @@ function All_declarations({
             }) => (
               <Declaration_Card
                 key={id}
+                fetchId={declarationId || "Unknown"}
                 id={declarationId || "Unknown ID"}
                 firstName={child.firstName}
                 lastName={child.lastName}

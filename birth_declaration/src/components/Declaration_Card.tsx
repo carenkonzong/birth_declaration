@@ -19,6 +19,7 @@ type Props = {
   fatherLastName: string;
   motherFirstName: string;
   motherLastName: string;
+  fetchId: string;
 };
 
 function Declaration_Card({
@@ -32,6 +33,7 @@ function Declaration_Card({
   fatherLastName,
   motherFirstName,
   motherLastName,
+  fetchId,
 }: Props) {
   const renderStatus = () => {
     switch (status) {
@@ -108,7 +110,7 @@ function Declaration_Card({
           <div className="ml-auto flex flex-col justify-between">
             {renderStatus()}
             <Link
-              to={"/details"}
+              to={`/details/${fetchId}`}
               className="border px-3 py-1 rounded-xl border-black/25 cursor-pointer hover:bg-[#23bf72] hover:text-white transition duration-300 hover:border-white"
             >
               View Details
