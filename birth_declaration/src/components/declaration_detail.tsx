@@ -1,11 +1,59 @@
 import Heading from "./Heading";
 import Top_bar from "./Top_bar";
-import Details from "./details";
-import Head from "./head";
+import Details from "./Details";
+import Head from "../components/Head";
 import { Calendar, MapPin, User, ArrowLeft } from "lucide-react";
 import Button from "../ui/Button";
+import { ENV } from "../config/env";
+import { useEffect, useState } from "react";
+import type { Declaration } from "@/types/Declaration";
+import { useParams } from "react-router-dom";
 
 function Declaration_detail() {
+  const [singleDeclaration, setSingleDeclaration] = useState<Declaration>();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string>();
+
+  const fetchDeclaration = async (id: string) => {
+    try {
+      setLoading(true);
+      const response = await fetch(`${ENV.API_URL}/declarations/${id}`);
+      if (!response.ok) {
+        console.log(response);
+        const code = response.status;
+        if (code === 404) {
+          throw new Error("Declaration not found");
+        } else {
+          throw new Error("Failed to fetch declaration");
+        }
+      }
+      const data = await response.json();
+      setSingleDeclaration(data);
+    } catch (error) {
+      console.log(error);
+      setError(error instanceof Error ? error.message : "An error occurred");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const { id } = useParams<{ id: string }>();
+
+  useEffect(() => {
+    if (id) {
+      fetchDeclaration(id);
+    } else {
+      setError("No declaration ID provided");
+      setLoading(false);
+    }
+  }, [id]);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!singleDeclaration) return <div>No declaration found</div>;
+
+  const { child } = singleDeclaration;
+
   return (
     <>
       <Top_bar />
@@ -20,7 +68,7 @@ function Declaration_detail() {
             size={18}
           />
           <div className="grid grid-cols-2">
-            <Details label="First Name" info="Ethan" />
+            <Details label="First Name" info={child.firstName} />
             <Details label="Last Name" info="Anderson" />
           </div>
           <div className="grid grid-cols-2">

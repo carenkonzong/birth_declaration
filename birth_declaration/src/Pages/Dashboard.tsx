@@ -2,10 +2,10 @@ import All_declarations from "../components/All_declarations";
 import Card_parent from "../components/Card_parent";
 import Top_bar from "../components/Top_bar";
 import useDeclarations from "../hooks/use-declarations/useDeclarations";
-import NoDeclaration from "../components/noDeclaration";
+import NoDeclaration from "../components/NoDeclaration";
 import { useState } from "react";
-import NewDeclarationButton from "../UI Components/newDeclarationButton";
-import Button from "../UI Components/Button";
+import NewDeclarationButton from "../ui/newDeclarationButton";
+import Button from "../ui/Button";
 import { FileText } from "lucide-react";
 
 function Dashboard() {
