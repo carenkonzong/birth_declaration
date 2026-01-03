@@ -3,21 +3,21 @@ export type Profile = {
   lastName: string;
   gender: string;
   dateOfBirth: string;
-  placeOfBirth: string;
+  cityOfBirth: string;
+  timeOfBirth: string;
 };
 
 export type parentProfile = {
   firstName: string;
   lastName: string;
   nationalId: string;
-  occupation?: string;
+  nationality: string;
 };
 
 export type declarantProfile = {
-  firstName: string;
-  lastName: string;
+  fullName: string;
   relationshipToChild: string;
   email: string;
+  phone: string;
   addInfo?: string;
-  fullName?: string;
 };

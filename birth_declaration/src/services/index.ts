@@ -1,7 +1,7 @@
-const host = "http://localhost:8080";
+import { ENV } from "../../src/config/env";
 
 const create = async (url: string, body: any) => {
-  const response = await fetch(`${host}/${url}`, {
+  const response = await fetch(`${ENV.API_URL}/${url}`, {
     method: "POST",
     headers: {
       accept: "application/json",

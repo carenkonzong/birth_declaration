@@ -2,7 +2,7 @@ import Heading from "./Heading";
 import Top_bar from "./Top_bar";
 import Details from "./Details";
 import Head from "../components/Head";
-import { Calendar, MapPin, User, ArrowLeft } from "lucide-react";
+import { Calendar, MapPin, User, ArrowLeft, Mail } from "lucide-react";
 import Button from "../ui/Button";
 import { ENV } from "../config/env";
 import { useEffect, useState } from "react";
@@ -52,7 +52,7 @@ function Declaration_detail() {
   if (error) return <div>Error: {error}</div>;
   if (!singleDeclaration) return <div>No declaration found</div>;
 
-  const { child, father, mother } = singleDeclaration;
+  const { child, father, mother, declarant } = singleDeclaration;
 
   return (
     <>
@@ -105,42 +105,36 @@ function Declaration_detail() {
             info={`${mother.firstName} ${mother.lastName}`}
           />
           <Details label="ID number" info={mother.nationalId} />
-          <Details label="Nationality" info="Canadian" />
+          <Details label="Nationality" info={mother.nationality} />
         </div>
       </div>
       <div className="flex justify-center pt-10 mx-5 gap-5 mb-5">
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
-          <Head head="Informant Information" />
-          <Details label="Full Name" info="Catherine Anderson" />
-          <Details label="Phone" info="+1-204-555-0167" />
-
-          <Details
-            label="Address"
-            info="147 Poplar Street, Winnipeg, MB"
-            icon={MapPin}
-          >
-            <div className="mt-5">
-              <h1 className="text-gray-500 text-sm">Relationship to Child</h1>
-              <h2 className="font-light text-gray-800 flex items-center">
-                Mother
-              </h2>
+          <Head head="Declarant Information" />
+          <div className="grid grid-cols-2 gap-15">
+            <div>
+              <Details label="Full Name" info={declarant.fullName} />
+              <Details label="Phone" info={declarant.phone} />
+              <Details label="Email" info={declarant.email} icon={Mail}>
+                <div className="mt-5">
+                  <h1 className="text-gray-500 text-sm">
+                    Relationship to Child
+                  </h1>
+                  <h2 className="font-light text-gray-800 flex items-center">
+                    {declarant.relationshipToChild}
+                  </h2>
+                </div>
+              </Details>
             </div>
-          </Details>
-        </div>
-        <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">
-          <Head
-            head="Facility Information"
-            subhead="Where the birth took place"
-            icon={MapPin}
-          />
-          <Details label="Facility Name" info="Children's Hospital" />
-          <Details
-            label="Address"
-            info="258 Health Blvd, Winnipeg, MB"
-            icon={MapPin}
-          />
-
-          <Details label="Attendant" info="DR. Lee" />
+            <div>
+              {declarant.addInfo && (
+                <Details
+                  label="Additional information"
+                  info={declarant.addInfo}
+                />
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>

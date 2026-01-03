@@ -1,533 +1,234 @@
 {
   "declarations": [
     {
-      "id": "DCL-88896",
-      "declarationId": "DCL-88896",
-      "submittedAt": "20/10/2023",
+      "id": "DCL-10001",
+      "declarationId": "DCL-10001",
+      "submittedAt": "12/02/2024",
       "status": "draft",
       "child": {
-        "firstName": "Jacob",
-        "lastName": "Morales",
-        "gender": "Male",
-        "dateOfBirth": "29/06/2022",
-        "cityOfBirth": "Brampton, ON"
-      },
-      "father": {
-        "firstName": "James",
-        "lastName": "Wright",
-        "nationalId": "7873906689518",
-        "nationality": "canadian"
-      },
-      "mother": {
-        "firstName": "Erika",
-        "lastName": "Dunn",
-        "nationalId": "5310421148285",
-        "nationality": "canadian"
-      },
-      "declarant": {
-        "relationshipToChild": "Mother",
-        "fullName": "Patricia Hall DDS",
-        "email": "lynchkrista@yahoo.com",
-        "phone": "+237 691514270"
-      }
-    },
-    {
-      "id": 2,
-      "declarationId": "DCL-38789",
-      "submittedAt": "20/04/2024",
-      "status": "rejected",
-      "child": {
-        "firstName": "Joseph",
-        "lastName": "Flores",
-        "gender": "Male",
-        "dateOfBirth": "14/04/2022",
-        "placeOfBirth": {
-          "hospital": "Cruz Group Hospital",
-          "address": "487 Colon Burg Apt. 384, Anthonyport, Cambodia"
-        }
-      },
-      "father": {
-        "firstName": "Timothy",
-        "lastName": "Romero",
-        "nationalId": "2014808872541",
-        "phone": "+237 673902014",
-        "email": "qsandoval@gmail.com"
-      },
-      "mother": {
-        "firstName": "Patricia",
-        "lastName": "Hall",
-        "nationalId": "5208579454652",
-        "phone": "+237 657519105",
-        "email": "cooperrebecca@jackson-richardson.com"
-      },
-      "declarant": {
-        "relationshipToChild": "Father",
-        "fullName": "Kevin Avila",
-        "nationalId": "5440388495260",
-        "address": "6868 Scott Meadows, Chadborough, Vanuatu",
-        "email": "nathancole@murphy-everett.com",
-        "phone": "+237 690845262"
-      }
-    },
-    {
-      "id": 3,
-      "declarationId": "DCL-90657",
-      "submittedAt": "05/02/2024",
-      "status": "draft",
-      "child": {
-        "firstName": "Jesse",
-        "lastName": "Harris",
-        "gender": "Male",
-        "dateOfBirth": "20/07/2023",
-        "placeOfBirth": {
-          "hospital": "Hood, Jenkins and King Hospital",
-          "address": "7144 Jennifer Ridges Suite 596, Thomaston, Djibouti"
-        }
-      },
-      "father": {
-        "firstName": "Cody",
-        "lastName": "Frey",
-        "nationalId": "1489626775858",
-        "phone": "+237 695870758",
-        "email": "acruz@yahoo.com"
-      },
-      "mother": {
-        "firstName": "Cynthia",
+        "firstName": "Liam",
         "lastName": "Anderson",
-        "nationalId": "1484898176608",
-        "phone": "+237 683189553",
-        "email": "wlozano@hotmail.com"
-      },
-      "declarant": {
-        "relationshipToChild": "Father",
-        "fullName": "Nancy Archer",
-        "nationalId": "2212709464575",
-        "address": "02885 Williams Viaduct, Mcleanmouth, Jersey",
-        "email": "smithmichael@wilson.com",
-        "phone": "+237 662402956"
-      }
-    },
-    {
-      "id": 4,
-      "declarationId": "DCL-87806",
-      "submittedAt": "26/05/2025",
-      "status": "pending",
-      "child": {
-        "firstName": "Nicole",
-        "lastName": "Wyatt",
-        "gender": "Female",
-        "dateOfBirth": "08/10/2023",
-        "placeOfBirth": {
-          "hospital": "Bowers-Vaughn Hospital",
-          "address": "753 Patrick Plain Suite 851, Anthonyhaven, San Marino"
-        }
-      },
-      "father": {
-        "firstName": "Anthony",
-        "lastName": "Reynolds",
-        "nationalId": "1124492198498",
-        "phone": "+237 669510817",
-        "email": "jaygarcia@avila.com"
-      },
-      "mother": {
-        "firstName": "Dorothy",
-        "lastName": "Allen",
-        "nationalId": "7532218416787",
-        "phone": "+237 652267759",
-        "email": "lirwin@good-vazquez.biz"
-      },
-      "declarant": {
-        "relationshipToChild": "Guardian",
-        "fullName": "James Gonzalez",
-        "nationalId": "9609753560147",
-        "address": "95725 Contreras Roads, West Cassieton, Bhutan",
-        "email": "smithedward@yahoo.com",
-        "phone": "+237 670232269"
-      }
-    },
-    {
-      "id": 5,
-      "declarationId": "DCL-42693",
-      "submittedAt": "01/09/2023",
-      "status": "approved",
-      "child": {
-        "firstName": "Kristie",
-        "lastName": "Cervantes",
-        "gender": "Female",
-        "dateOfBirth": "08/03/2023",
-        "placeOfBirth": {
-          "hospital": "Morgan-Scott Hospital",
-          "address": "03718 Robert Glens, Lake Christianchester, Croatia"
-        }
-      },
-      "father": {
-        "firstName": "Patrick",
-        "lastName": "Hoffman",
-        "nationalId": "9653677917388",
-        "phone": "+237 699477803",
-        "email": "bpitts@gmail.com"
-      },
-      "mother": {
-        "firstName": "Cassandra",
-        "lastName": "Miranda",
-        "nationalId": "8015665579650",
-        "phone": "+237 673728153",
-        "email": "simmonscrystal@yahoo.com"
-      },
-      "declarant": {
-        "relationshipToChild": "Guardian",
-        "fullName": "John Jimenez",
-        "nationalId": "7290301792466",
-        "address": "7688 Hamilton Ports, Bradleyville, Taiwan",
-        "email": "melissahicks@yahoo.com",
-        "phone": "+237 662906602"
-      }
-    },
-    {
-      "id": 6,
-      "declarationId": "DCL-58330",
-      "submittedAt": "14/03/2023",
-      "status": "rejected",
-      "child": {
-        "firstName": "Mark",
-        "lastName": "Boyer",
-        "gender": "Female",
-        "dateOfBirth": "27/11/2022",
-        "placeOfBirth": {
-          "hospital": "Reeves-Allen Hospital",
-          "address": "463 Randy Lodge, New Benjaminfurt, Indonesia"
-        }
-      },
-      "father": {
-        "firstName": "Timothy",
-        "lastName": "Mcdaniel",
-        "nationalId": "3151471512662",
-        "phone": "+237 697040577",
-        "email": "margaret04@hansen.org"
-      },
-      "mother": {
-        "firstName": "Jessica",
-        "lastName": "Snyder",
-        "nationalId": "4384205455864",
-        "phone": "+237 650740255",
-        "email": "lstafford@gmail.com"
-      },
-      "declarant": {
-        "relationshipToChild": "Guardian",
-        "fullName": "Michael Perez",
-        "nationalId": "4071646053418",
-        "address": "579 Hart Parkways Suite 945, North Zachary, Uganda",
-        "email": "marissa20@gmail.com",
-        "phone": "+237 659290207"
-      }
-    },
-    {
-      "id": 7,
-      "declarationId": "DCL-21909",
-      "submittedAt": "17/07/2024",
-      "status": "rejected",
-      "child": {
-        "firstName": "Michael",
-        "lastName": "King",
-        "gender": "Female",
-        "dateOfBirth": "21/02/2022",
-        "placeOfBirth": {
-          "hospital": "Carr-Johnson Hospital",
-          "address": "4240 Peter Junctions Apt. 399, Lake James, Belgium"
-        }
-      },
-      "father": {
-        "firstName": "Matthew",
-        "lastName": "Kramer",
-        "nationalId": "2505653990251",
-        "phone": "+237 677960292",
-        "email": "zandrews@yahoo.com"
-      },
-      "mother": {
-        "firstName": "Michelle",
-        "lastName": "Morrison",
-        "nationalId": "6486143795329",
-        "phone": "+237 660923897",
-        "email": "dmullins@gmail.com"
-      },
-      "declarant": {
-        "relationshipToChild": "Guardian",
-        "fullName": "Tracy White",
-        "nationalId": "7282328133862",
-        "address": "8761 Mark Falls, West Gerald, Iceland",
-        "email": "bernardjennifer@yahoo.com",
-        "phone": "+237 651616918"
-      }
-    },
-    {
-      "id": 8,
-      "declarationId": "DCL-49127",
-      "submittedAt": "24/10/2025",
-      "status": "approved",
-      "child": {
-        "firstName": "Eduardo",
-        "lastName": "Marshall",
-        "gender": "Female",
-        "dateOfBirth": "09/11/2023",
-        "placeOfBirth": {
-          "hospital": "Howard, Bush and Lawson Hospital",
-          "address": "36575 Kevin Forks, South Donna, Suriname"
-        }
-      },
-      "father": {
-        "firstName": "Kevin",
-        "lastName": "Robinson",
-        "nationalId": "3755018382567",
-        "phone": "+237 681224456",
-        "email": "sellersheather@smith.com"
-      },
-      "mother": {
-        "firstName": "Christine",
-        "lastName": "Horne",
-        "nationalId": "1354375905743",
-        "phone": "+237 654761425",
-        "email": "jillianmiller@hotmail.com"
-      },
-      "declarant": {
-        "relationshipToChild": "Father",
-        "fullName": "Carl Robbins",
-        "nationalId": "1212236068509",
-        "address": "6204 Barnett Throughway, Salazarfort, Equatorial Guinea",
-        "email": "michellebates@mccoy.com",
-        "phone": "+237 656061961"
-      }
-    },
-    {
-      "id": 9,
-      "declarationId": "DCL-44434",
-      "submittedAt": "28/09/2025",
-      "status": "approved",
-      "child": {
-        "firstName": "Andrew",
-        "lastName": "Carroll",
-        "gender": "Female",
-        "dateOfBirth": "21/09/2022",
-        "placeOfBirth": {
-          "hospital": "Shaw, Diaz and Williams Hospital",
-          "address": "3383 Melissa Lodge, Nelsonberg, France"
-        }
-      },
-      "father": {
-        "firstName": "Keith",
-        "lastName": "Williams",
-        "nationalId": "3969657332857",
-        "phone": "+237 672585416",
-        "email": "steven64@marks.info"
-      },
-      "mother": {
-        "firstName": "Michelle",
-        "lastName": "Hale",
-        "nationalId": "2849340336303",
-        "phone": "+237 680785179",
-        "email": "xfoster@perry-williams.info"
-      },
-      "declarant": {
-        "relationshipToChild": "Mother",
-        "fullName": "Rebecca Mckee",
-        "nationalId": "1804912910692",
-        "address": "88771 Matthew Springs Suite 868, Savagefurt, Libyan Arab Jamahiriya",
-        "email": "mcdonaldlaura@curtis.com",
-        "phone": "+237 664445540"
-      }
-    },
-    {
-      "id": 10,
-      "declarationId": "DCL-54511",
-      "submittedAt": "23/04/2023",
-      "status": "pending",
-      "child": {
-        "firstName": "Whitney",
-        "lastName": "Kelley",
         "gender": "Male",
-        "dateOfBirth": "11/05/2022",
-        "placeOfBirth": {
-          "hospital": "Gonzalez, Gonzalez and Rojas Hospital",
-          "address": "9832 Patricia Island Suite 178, New Hollyville, Yemen"
-        }
+        "dateOfBirth": "05/01/2024",
+        "cityOfBirth": "Toronto, ON"
       },
       "father": {
-        "firstName": "Randy",
-        "lastName": "Russell",
-        "nationalId": "5401547667504",
-        "phone": "+237 681936104",
-        "email": "iarroyo@hotmail.com"
+        "firstName": "Michael",
+        "lastName": "Anderson",
+        "nationalId": "CA987654321",
+        "nationality": "canadian"
       },
       "mother": {
         "firstName": "Sarah",
-        "lastName": "Wright",
-        "nationalId": "6336355993011",
-        "phone": "+237 690051702",
-        "email": "paulahall@davis-tanner.com"
+        "lastName": "Anderson",
+        "nationalId": "CA123456789",
+        "nationality": "canadian"
       },
       "declarant": {
         "relationshipToChild": "Mother",
-        "fullName": "Laura Lopez",
-        "nationalId": "6120060839842",
-        "address": "851 Alyssa Expressway Apt. 699, Gutierrezstad, France",
-        "email": "sarahpena@yahoo.com",
-        "phone": "+237 682609075"
+        "fullName": "Sarah Anderson",
+        "email": "sarah.anderson@gmail.com",
+        "phone": "+1 4165558234",
+        "addInfo": "Birth registered after hospital discharge"
       }
     },
+
     {
-      "declarant": {
-        "firstName": "Fallon",
-        "lastName": "Beasley",
-        "relationshipToChild": "Accusantium optio i",
-        "email": "fygagyxusi@mailinator.com",
-        "addInfo": "Natus exercitation a"
-      },
-      "mother": {
-        "firstName": "Chiquita",
-        "lastName": "Cameron",
-        "nationalId": "898",
-        "occupation": "Sed aliquid amet ex"
+      "id": "DCL-10002",
+      "declarationId": "DCL-10002",
+      "submittedAt": "28/11/2023",
+      "status": "submitted",
+      "child": {
+        "firstName": "Olivia",
+        "lastName": "Nguyen",
+        "gender": "Female",
+        "dateOfBirth": "14/10/2023",
+        "cityOfBirth": "Mississauga, ON"
       },
       "father": {
-        "firstName": "Harding",
-        "lastName": "Weiss",
-        "nationalId": "109",
-        "occupation": "Accusamus ut veritat"
+        "firstName": "Daniel",
+        "lastName": "Nguyen",
+        "nationalId": "CA564738291",
+        "nationality": "canadian"
       },
-      "child": {
-        "firstName": "Iola",
-        "lastName": "Nielsen",
-        "dateOfBirth": "2007-01-16",
-        "gender": "male",
-        "placeOfBirth": "Facilis totam quas q"
+      "mother": {
+        "firstName": "Mai",
+        "lastName": "Tran",
+        "nationalId": "CA918273645",
+        "nationality": "canadian"
       },
-      "submittedAt": "12/02/2025",
-      "status": "draft",
-      "id": 11
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Daniel Nguyen",
+        "email": "daniel.nguyen@hotmail.com",
+        "phone": "+1 9055551122",
+        "addInfo": "Parents married"
+      }
     },
+
     {
-      "declarant": {
-        "firstName": "Irma",
-        "lastName": "Hoover",
-        "relationshipToChild": "Est repudiandae cons",
-        "email": "hacusojah@mailinator.com",
-        "addInfo": "Sed sed rerum ullam "
-      },
-      "mother": {
-        "firstName": "Sophia",
-        "lastName": "Holden",
-        "nationalId": "904",
-        "occupation": "Mollitia ullam volup"
+      "id": "DCL-10003",
+      "declarationId": "DCL-10003",
+      "submittedAt": "03/01/2024",
+      "status": "approved",
+      "child": {
+        "firstName": "Noah",
+        "lastName": "Bouchard",
+        "gender": "Male",
+        "dateOfBirth": "22/12/2023",
+        "cityOfBirth": "Montreal, QC"
       },
       "father": {
-        "firstName": "Belle",
-        "lastName": "Fowler",
-        "nationalId": "410",
-        "occupation": "Magna dolorem cupidi"
+        "firstName": "Alexandre",
+        "lastName": "Bouchard",
+        "nationalId": "CA332211009",
+        "nationality": "canadian"
       },
-      "child": {
-        "firstName": "Devin",
-        "lastName": "Sullivan",
-        "dateOfBirth": "2009-11-27",
-        "gender": "female",
-        "placeOfBirth": "Qui illo magni neces"
+      "mother": {
+        "firstName": "Camille",
+        "lastName": "Roy",
+        "nationalId": "CA778899001",
+        "nationality": "canadian"
       },
-      "submittedAt": "01/02/2026",
-      "status": "draft",
-      "id": "bQSd0X9"
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Alexandre Bouchard",
+        "email": "alex.bouchard@videotron.ca",
+        "phone": "+1 5145559087",
+        "addInfo": "Declaration completed by hospital clerk"
+      }
     },
+
     {
-      "declarant": {
-        "firstName": "Alisa",
-        "lastName": "Oneill",
-        "relationshipToChild": "Ea non voluptatibus ",
-        "email": "kajic@mailinator.com",
-        "addInfo": "Eos et non qui accu"
-      },
-      "mother": {
-        "firstName": "Shannon",
-        "lastName": "Russell",
-        "nationalId": "590",
-        "occupation": "Voluptas facere comm"
+      "id": "DCL-10004",
+      "declarationId": "DCL-10004",
+      "submittedAt": "15/08/2023",
+      "status": "approved",
+      "child": {
+        "firstName": "Ava",
+        "lastName": "Patel",
+        "gender": "Female",
+        "dateOfBirth": "01/08/2023",
+        "cityOfBirth": "Brampton, ON"
       },
       "father": {
-        "firstName": "Brooke",
-        "lastName": "Lyons",
-        "nationalId": "818",
-        "occupation": "Laudantium aliquam "
+        "firstName": "Ravi",
+        "lastName": "Patel",
+        "nationalId": "CA665544332",
+        "nationality": "canadian"
       },
-      "child": {
-        "firstName": "Noel",
-        "lastName": "Mullins",
-        "dateOfBirth": "1991-09-04",
-        "gender": "female",
-        "placeOfBirth": "Dolorem tempora est "
+      "mother": {
+        "firstName": "Neha",
+        "lastName": "Patel",
+        "nationalId": "CA998877665",
+        "nationality": "canadian"
       },
-      "submittedAt": "01/02/2026",
-      "status": "draft",
-      "id": "18DmV7M"
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Neha Patel",
+        "email": "neha.patel@gmail.com",
+        "phone": "+1 6475554410",
+        "addInfo": "Birth occurred at Brampton Civic Hospital"
+      }
     },
+
     {
-      "declarant": {
-        "firstName": "Alma",
-        "lastName": "Bartlett",
-        "relationshipToChild": "Vel quia blanditiis ",
-        "email": "hipuhumi@mailinator.com",
-        "addInfo": "Sint est asperiores"
-      },
-      "mother": {
-        "firstName": "William",
-        "lastName": "James",
-        "nationalId": "859",
-        "occupation": "Est amet dolorum do"
+      "id": "DCL-10005",
+      "declarationId": "DCL-10005",
+      "submittedAt": "09/09/2023",
+      "status": "draft",
+      "child": {
+        "firstName": "Lucas",
+        "lastName": "Martinez",
+        "gender": "Male",
+        "dateOfBirth": "30/08/2023",
+        "cityOfBirth": "Vancouver, BC"
       },
       "father": {
-        "firstName": "Angela",
-        "lastName": "Castillo",
-        "nationalId": "242",
-        "occupation": "Quisquam tempora adi"
+        "firstName": "Carlos",
+        "lastName": "Martinez",
+        "nationalId": "CA445566778",
+        "nationality": "canadian"
       },
-      "child": {
-        "firstName": "Jocelyn",
-        "lastName": "Daniel",
-        "dateOfBirth": "1972-05-25",
-        "gender": "female",
-        "placeOfBirth": "Possimus illo atque"
+      "mother": {
+        "firstName": "Isabella",
+        "lastName": "Martinez",
+        "nationalId": "CA889900112",
+        "nationality": "canadian"
       },
-      "submittedAt": "01/02/2026",
-      "status": "draft",
-      "id": "M9HnuSn"
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Carlos Martinez",
+        "email": "c.martinez@yahoo.com",
+        "phone": "+1 6045557788",
+        "addInfo": "Waiting for mother signature"
+      }
     },
+
     {
-      "declarant": {
-        "firstName": "Beck",
-        "lastName": "Mayo",
-        "relationshipToChild": "Nulla voluptate veni",
-        "email": "wotyfu@mailinator.com",
-        "addInfo": "Incididunt quo aut p"
-      },
-      "mother": {
-        "firstName": "Ferdinand",
-        "lastName": "Casey",
-        "nationalId": "648",
-        "occupation": "Voluptate qui ipsa "
+      "id": "DCL-10006",
+      "declarationId": "DCL-10006",
+      "submittedAt": "21/06/2023",
+      "status": "submitted",
+      "child": {
+        "firstName": "Emily",
+        "lastName": "Johnson",
+        "gender": "Female",
+        "dateOfBirth": "15/06/2023",
+        "cityOfBirth": "Calgary, AB"
       },
       "father": {
-        "firstName": "Genevieve",
-        "lastName": "Meyer",
-        "nationalId": "788",
-        "occupation": "Et est dolore quibu"
+        "firstName": "Matthew",
+        "lastName": "Johnson",
+        "nationalId": "CA112233445",
+        "nationality": "canadian"
       },
+      "mother": {
+        "firstName": "Lauren",
+        "lastName": "Johnson",
+        "nationalId": "CA556677889",
+        "nationality": "canadian"
+      },
+      "declarant": {
+        "relationshipToChild": "Mother",
+        "fullName": "Lauren Johnson",
+        "email": "lauren.johnson@shaw.ca",
+        "phone": "+1 4035556642",
+        "addInfo": "Hospital declaration submitted online"
+      }
+    },
+
+    {
+      "id": "DCL-10007",
+      "declarationId": "DCL-10007",
+      "submittedAt": "02/03/2024",
+      "status": "approved",
       "child": {
-        "firstName": "Colleen",
-        "lastName": "Hickman",
-        "dateOfBirth": "2010-09-23",
-        "gender": "male",
-        "timeOfBirth": "12:56",
-        "placeOfBirth": "Id hic aliquid quos "
+        "firstName": "Ethan",
+        "lastName": "O’Connor",
+        "gender": "Male",
+        "dateOfBirth": "18/02/2024",
+        "cityOfBirth": "Ottawa, ON"
       },
-      "submittedAt": "01/02/2026",
-      "status": "draft",
-      "id": "7m8mlK0"
+      "father": {
+        "firstName": "Patrick",
+        "lastName": "O’Connor",
+        "nationalId": "CA776655443",
+        "nationality": "canadian"
+      },
+      "mother": {
+        "firstName": "Melissa",
+        "lastName": "O’Connor",
+        "nationalId": "CA334455667",
+        "nationality": "canadian"
+      },
+      "declarant": {
+        "relationshipToChild": "Father",
+        "fullName": "Patrick O’Connor",
+        "email": "patrick.oconnor@gmail.com",
+        "phone": "+1 6135559901",
+        "addInfo": "Approved by civil registrar"
+      }
     }
   ]
 }
