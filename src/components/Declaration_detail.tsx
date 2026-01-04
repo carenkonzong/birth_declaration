@@ -58,7 +58,7 @@ function Declaration_detail() {
     <>
       <Top_bar />
       <div className="flex justify-center mx-5 flex-col">
-        <Heading head="Declaration details" subhead="ID: 8">
+        <Heading head="Declaration details" subhead={`ID: ${id}`}>
           <Button btnHead="Back to Dashboard" icon={ArrowLeft} link="/" />
         </Heading>
         <div className="flex w-full  p-5 border rounded-2xl border-black/10 flex-col bg-[#fafafa]">

@@ -7,14 +7,14 @@ export type Profile = {
   timeOfBirth: string;
 };
 
-export type parentProfile = {
+export type ParentProfile = {
   firstName: string;
   lastName: string;
   nationalId: string;
   nationality: string;
 };
 
-export type declarantProfile = {
+export type DeclarantProfile = {
   fullName: string;
   relationshipToChild: string;
   email: string;
@@ -22,7 +22,7 @@ export type declarantProfile = {
   addInfo?: string;
 };
 
-export type users = {
+export type Users = {
   id: string;
   role: "admin" | "clerk" | "declarant";
   status: "active" | "inactive" | "suspended";
