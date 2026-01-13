@@ -4,7 +4,7 @@ A modern web application designed to streamline the birth registration process f
 
 ## Overview
 
-I developed this project to demonstrate full-stack development capabilities using modern React architecture. The system handles the complete lifecycle of birth declarations—from initial submission through approval. While it currently uses JSON Server for the backend, the architecture is designed to scale to a production-grade API.
+I developed this project to demonstrate full-stack development capabilities using modern React architecture. The system handles the complete lifecycle of birth declarations from initial submission through approval. While it currently uses JSON Server for the backend, the architecture is designed to scale to a production-grade API.
 
 ### The Problem It Solves
 
