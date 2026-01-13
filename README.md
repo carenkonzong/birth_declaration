@@ -14,3 +14,12 @@ Birth registration is a critical administrative process, but traditional systems
 - Track application status in real-time
 - Store and retrieve declaration records
 - Reduce processing time for government clerks
+
+### Core Functionality
+
+- **Multi-step Declaration Forms**: Structured forms collecting child, parent, and declarant information with real-time validation
+- **Status Tracking**: Monitor applications through draft, pending, approved, and rejected states
+- **Dashboard Overview**: Visual summary cards showing declaration counts by status
+- **Detailed View**: Individual declaration pages displaying complete submission details
+- **Search & Filter**: Find declarations by status, date, or child name
+- **Responsive Design**: Fully functional on desktop, tablet, and mobile devices
