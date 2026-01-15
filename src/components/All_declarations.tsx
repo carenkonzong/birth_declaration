@@ -3,6 +3,7 @@ import Declaration_Card from "./Declaration_Card";
 /* import { Link } from "react-router-dom"; */
 import type { Declaration } from "@/types/Declaration";
 import Select from "../ui/Select";
+import NoDeclaration from "../Pages/error pages/NoDeclaration";
 
 type Props = {
   declarations: Declaration[];
@@ -56,34 +57,38 @@ function All_declarations({
             </div>
           </div>
         </div>
-        <div>
-          {declarations.map(
-            ({
-              declarationId,
-              child,
-              father,
-              mother,
-              submittedAt,
-              status = "draft",
-              id,
-            }) => (
-              <Declaration_Card
-                key={id}
-                fetchId={declarationId || "Unknown"}
-                id={declarationId || "Unknown ID"}
-                firstName={child.firstName}
-                lastName={child.lastName}
-                birthDate={child.dateOfBirth}
-                submitionDate={submittedAt}
-                fatherFirstName={father.firstName}
-                fatherLastName={father.lastName}
-                motherFirstName={mother.firstName}
-                motherLastName={mother.lastName}
-                status={status.toUpperCase()}
-              />
-            )
-          )}
-        </div>
+        {declarations.length === 0 ? (
+          <NoDeclaration />
+        ) : (
+          <div>
+            {declarations.map(
+              ({
+                declarationId,
+                child,
+                father,
+                mother,
+                submittedAt,
+                status = "draft",
+                id,
+              }) => (
+                <Declaration_Card
+                  key={id}
+                  fetchId={declarationId || "Unknown"}
+                  id={declarationId || "Unknown ID"}
+                  firstName={child.firstName}
+                  lastName={child.lastName}
+                  birthDate={child.dateOfBirth}
+                  submitionDate={submittedAt}
+                  fatherFirstName={father.firstName}
+                  fatherLastName={father.lastName}
+                  motherFirstName={mother.firstName}
+                  motherLastName={mother.lastName}
+                  status={status.toUpperCase()}
+                />
+              )
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
