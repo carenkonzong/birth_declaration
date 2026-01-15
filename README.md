@@ -50,3 +50,81 @@ Birth registration is a critical administrative process, but traditional systems
 - **Radix UI** - Unstyled, accessible component primitives (Dialog, Popover)
 - **Lucide React** - Beautiful, consistent icon system
 - **Custom Components** - Built using shadcn/ui patterns for consistency
+
+### Backend (Development)
+
+- **JSON Server** - RESTful API mock server
+- **Fetch API** - Native HTTP requests with proper error handling
+
+## Project Structure
+
+```
+birth_declaration/
+├── src/
+│   ├── Pages/                    # Route components
+│   │   ├── Dashboard. tsx         # Main dashboard with overview cards
+│   │   ├── New_declaration_page2.tsx  # Multi-section birth declaration form
+│   │   └── Declaration_detail.tsx     # Individual declaration view
+│   ├── components/               # Reusable UI components
+│   │   ├── All_declarations.tsx  # Searchable declaration list
+│   │   ├── Card_parent.tsx       # Status summary cards
+│   │   ├── Top_bar.tsx           # Navigation header with search
+│   │   ├── Sidebar.tsx           # Side navigation panel
+│   │   └── ui/                   # Radix UI wrapper components
+│   ├── hooks/
+│   │   └── use-declarations/     # Custom hook for data fetching
+│   ├── services/
+│   │   └── index.ts              # API service layer
+│   ├── types/                    # TypeScript type definitions
+│   │   ├── Declaration.ts        # Core declaration type
+│   │   └── Profile.ts            # Child, parent, declarant types
+│   ├── routes/                   # Route configuration
+│   ├── config/
+│   │   └── env.ts                # Environment variables
+│   └── lib/
+│       └── utils.ts              # Utility functions (classname merging)
+├── Database/
+│   └── db.json                   # Mock database with sample declarations
+└── public/                       # Static assets
+```
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **npm** or **yarn** package manager
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/carenkonzong/birth_declaration.git
+
+# Navigate to project directory
+cd birth_declaration
+
+# Install dependencies
+npm install
+```
+
+### Running Locally
+
+You need to run both the frontend and backend servers:
+
+```bash
+# Terminal 1: Start Vite development server
+npm run dev
+```
+
+```bash
+# Terminal 2: Start JSON Server (mock API)
+npm run server
+```
+
+The application will be available at:
+
+- **Frontend**: http://localhost:5173
+- **Backend API**: http://localhost:8080
