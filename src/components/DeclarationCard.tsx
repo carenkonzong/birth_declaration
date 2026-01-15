@@ -6,7 +6,7 @@ import {
   CircleDashed,
 } from "lucide-react";
 import { Link } from "react-router";
-import Declaration_status from "../ui/Declaration_status";
+import Declaration_status from "../ui (custom)/Declaration_status";
 
 type Props = {
   id: string;
@@ -22,7 +22,7 @@ type Props = {
   fetchId: string;
 };
 
-function Declaration_Card({
+function DeclarationCard({
   firstName,
   lastName,
   birthDate,
@@ -122,4 +122,4 @@ function Declaration_Card({
   );
 }
 
-export default Declaration_Card;
+export default DeclarationCard;

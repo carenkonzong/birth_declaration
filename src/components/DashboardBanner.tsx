@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 import { FileText } from "lucide-react";
 import { Activity } from "lucide-react";
 
-function Dashboard_banner() {
+function DashboardBanner() {
   return (
     <>
       <div className="flex justify-center m-5 ">
@@ -36,4 +36,4 @@ function Dashboard_banner() {
   );
 }
 
-export default Dashboard_banner;
+export default DashboardBanner;
