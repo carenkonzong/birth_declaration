@@ -9,7 +9,7 @@ function Sidebar() {
       <aside className="bg-[#fbfbfb] border-r border-black/10 w-65 fixed flex flex-col h-full">
         <>
           <div className="flex justify-center mx-5 mb-5 mt-5">
-            <div className="flex flex-col py-8 px-5 my-2 bg-linear-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-[1216px] shadow-xl">
+            <div className="flex flex-col py-8 px-5 my-2 bg-linear-to-r from-[#3582f8] to-[#23bf72] rounded-2xl w-full max-w-304 shadow-xl">
               <div className="flex flex-row mb-5">
                 <div className="flex items-center mr-3">
                   <Activity size={35} color="white" />
