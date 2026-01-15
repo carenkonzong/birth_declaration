@@ -1,60 +1,38 @@
-# Birth Declaration System
+# Birth Declaration (React + TypeScript)
 
-A modern web application designed to streamline the birth registration process for Canadian citizens. Built to replace legacy paper-based systems, this platform allows parents to submit birth declarations online, track application status, and manage their documents efficiently.
+A portfolio web application that simulates an online birth declaration workflow.  
+Users can create a birth declaration through a multi-step form, save it, and track its status from submission to approval.
 
-## Overview
+This project was built primarily to practice **large form handling**, **client-side validation**, and **clean React application structure**.  
+A mock backend (JSON Server) is used so the focus stays on front-end architecture and data flow.
 
-I developed this project to demonstrate front-end development capabilities using modern React architecture. The system handles the complete lifecycle of birth declarations from initial submission through approval. While it currently uses JSON Server for the backend, the architecture is designed to scale to a production-grade API.
+---
 
-### The Problem It Solves
+## Features
 
-Birth registration is a critical administrative process, but traditional systems involve lengthy paperwork and in-person visits. This application digitizes the entire process, allowing parents to:
+- Multi-step birth declaration form (child, parents, declarant)
+- Save and retrieve declarations
+- Status tracking: **draft**, **pending**, **approved**, **rejected**
+- Dashboard summary cards by status
+- Declaration list with search and filtering
+- Detailed declaration view
+- Responsive layout (desktop & mobile)
 
-- Submit birth declarations without having to leave the confort of their home
-- Track application status in real-time
-- Store and retrieve declaration records
-- Reduce processing time for government clerks
-
-### Core Functionality
-
-- **Multi-step Declaration Forms**: Structured forms collecting child, parent, and declarant information with real-time validation
-- **Status Tracking**: Monitor applications through draft, pending, approved, and rejected states
-- **Dashboard Overview**: Visual summary cards showing declaration counts by status
-- **Detailed View**: Individual declaration pages displaying complete submission details
-- **Search & Filter**: Find declarations by status, date, or child name
-- **Responsive Design**: Fully functional on desktop, tablet, and mobile devices
-
-### Technical Highlights
-
-- **Type-Safe Development**: Comprehensive TypeScript interfaces for all data structures
-- **Form Validation**: Yup schema validation integrated with React Hook Form for robust error handling
-- **Component Architecture**: Reusable UI components built with Radix UI primitives
-- **Custom Hooks**: Encapsulated business logic in `useDeclarations` hook for cleaner component code
-- **Routing**: React Router v7 with dynamic routes for declaration details
-- **Modern Styling**: Tailwind CSS v4 with custom gradient designs and smooth animations
+---
 
 ## Tech Stack
 
-### Frontend
+- **React**
+- **TypeScript**
+- **Vite**
+- **React Router**
+- **React Hook Form**
+- **Yup**
+- **Tailwind CSS**
+- **Radix UI / shadcn-style components**
+- **JSON Server** (mock REST API)
 
-- **React 19** - Latest React features including improved server components support
-- **TypeScript 5.9** - Static typing for enhanced code reliability
-- **Vite** - Lightning-fast build tool and dev server
-- **React Router v7** - Client-side routing with nested layouts
-- **React Hook Form** - Performant forms with minimal re-renders
-- **Yup** - Schema-based form validation
-
-### UI/UX
-
-- **Tailwind CSS v4** - Utility-first CSS framework
-- **Radix UI** - Unstyled, accessible component primitives (Dialog, Popover)
-- **Lucide React** - Beautiful, consistent icon system
-- **Custom Components** - Built using shadcn/ui patterns for consistency
-
-### Backend (Development)
-
-- **JSON Server** - RESTful API mock server
-- **Fetch API** - Native HTTP requests with proper error handling
+---
 
 ## Project Structure
 
@@ -95,7 +73,7 @@ birth_declaration/
 Make sure you have the following installed:
 
 - **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
-- **npm** or **yarn** package manager
+- **npm**
 
 ### Installation
 
@@ -128,3 +106,87 @@ The application will be available at:
 
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:8080
+
+## Key Technical Decisions
+
+**React Hook Form**  
+I chose React Hook Form because the declaration form is large and multi-step.  
+Using uncontrolled inputs helped keep re-renders low and made the form logic easier to manage as the number of fields grew.
+
+**Yup instead of Zod**  
+At the time of building this project, Yup had more straightforward integration with React Hook Form for my use case.  
+It allowed me to define validation rules quickly without adding extra boilerplate.
+
+**JSON Server**  
+JSON Server was used to prototype the full flow without spending time on backend setup.  
+All API calls go through a small service layer, so replacing it with a real backend would not require refactoring the UI.
+
+## Data Model
+
+The application centers around a single main entity: a **birth declaration**.  
+Each declaration groups all information needed to follow the declaration from creation to approval.
+
+### Declaration Schema
+
+```typescript
+{
+  id: string,
+  declarationId: string,
+  submittedAt: string,
+  status: "draft" | "pending" | "approved" | "rejected",
+  child: {
+    firstName: string,
+    lastName: string,
+    gender: "Male" | "Female",
+    dateOfBirth: string,
+    cityOfBirth:  string,
+    timeOfBirth: string
+  },
+  father: ParentProfile,
+  mother: ParentProfile,
+  declarant:  {
+    fullName: string,
+    relationshipToChild: string,
+    email: string,
+    phone: string,
+    addInfo?: string
+  }
+}
+```
+
+The model was kept intentionally explicit to avoid implicit assumptions and make validation easier at the form level.
+Full TypeScript definitions are available in src/types/
+
+## Future Enhancements
+
+This project is **still actively being worked on**.  
+The next improvements I am focusing on are features that introduce real-world constraints, security, and workflow complexity, including:
+
+- **Authentication** — login for parents, clerks, and administrators
+- **Role-based access control** — different permissions for declarants vs. government staff
+- **File uploads** — supporting documents such as IDs and hospital records
+- **Notifications** — email or SMS alerts when a declaration status changes
+- **PDF generation** — export a completed declaration as an official document
+- **Payments** — fees for expedited processing
+- **Admin workflow** — review and approval interface for clerks
+- **Audit logging** — traceability of changes for compliance
+- **Multi-language support** — English / French
+- **Dark mode** — user preference toggle
+
+## Browser Support
+
+- Chrome/Edge (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Contact & Connect
+
+**CarenKonzong**
+
+- GitHub: [@carenkonzong](https://github.com/carenkonzong)
+- Email: tsafackedwin@gmail.com
+- LinkedIn: www.linkedin.com/in/edwinnkonzong-184328347
+- Portfolio: -
+
+---
