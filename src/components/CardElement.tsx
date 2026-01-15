@@ -10,7 +10,7 @@ type Props = {
   trendIcon?: LucideIcon;
 };
 
-function Card_element(props: Props) {
+function CardElement(props: Props) {
   const {
     head,
     total,
@@ -46,4 +46,4 @@ function Card_element(props: Props) {
   );
 }
 
-export default Card_element;
+export default CardElement;

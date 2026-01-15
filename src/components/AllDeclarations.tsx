@@ -1,8 +1,8 @@
 import { /* CirclePlus */ FileText } from "lucide-react";
-import Declaration_Card from "./Declaration_Card";
+import Declaration_Card from "./DeclarationCard";
 /* import { Link } from "react-router-dom"; */
 import type { Declaration } from "@/types/Declaration";
-import Select from "../ui/Select";
+import Select from "../ui (custom)/Select";
 import NoDeclaration from "../Pages/error pages/NoDeclaration";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
   subHeading: string;
 };
 
-function All_declarations({
+function AllDeclarations({
   declarations,
   setfilterCriteria,
   heading,
@@ -94,4 +94,4 @@ function All_declarations({
   );
 }
 
-export default All_declarations;
+export default AllDeclarations;

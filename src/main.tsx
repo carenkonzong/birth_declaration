@@ -5,8 +5,8 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import ErrorPage from "./Pages/error pages/Error_page";
 import Dashboard from "./Pages/Dashboard";
-import Declaration_detail from "./components/Declaration_detail";
-import New_declaration_page from "./Pages/New_declaration_page";
+import DeclarationDetail from "./components/DeclarationDetail";
+import NewDeclarationPage from "./Pages/NewDeclarationPage";
 
 const router = createBrowserRouter([
   {
@@ -18,17 +18,14 @@ const router = createBrowserRouter([
         index: true,
         element: <Dashboard />,
       },
-      /* {
-        path: "/new_declaration2",
-        element: <New_declaration_page2 />,
-      }, */
+
       {
         path: "/new_declaration",
-        element: <New_declaration_page />,
+        element: <NewDeclarationPage />,
       },
       {
         path: "/details/:id",
-        element: <Declaration_detail />,
+        element: <DeclarationDetail />,
       },
     ],
   },
