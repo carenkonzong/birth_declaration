@@ -1,6 +1,6 @@
 import { PanelLeft, Globe, Sun } from "lucide-react";
 
-function Top_bar() {
+function TopBar() {
   return (
     <div className="h-18 shadow-md bg-[#fbfbfb] border-b border-black/10 w-full px-10 py-3 flex justify-between items-center">
       <div className="flex items-center ">
@@ -30,4 +30,4 @@ function Top_bar() {
   );
 }
 
-export default Top_bar;
+export default TopBar;

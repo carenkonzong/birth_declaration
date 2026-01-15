@@ -5,7 +5,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import ErrorPage from "./Pages/error pages/Error_page";
 import Dashboard from "./Pages/Dashboard";
-import DeclarationDetail from "./components/DeclarationDetail";
+import DeclarationDetail from "./Pages/DeclarationDetail";
 import NewDeclarationPage from "./Pages/NewDeclarationPage";
 
 const router = createBrowserRouter([

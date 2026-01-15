@@ -1,15 +1,15 @@
-import All_declarations from "../components/All_declarations";
-import Card_parent from "../components/Card_parent";
-import Top_bar from "../components/Top_bar";
+import All_declarations from "../components/AllDeclarations";
+import CardParent from "../components/CardParent";
 import useDeclarations from "../hooks/use-declarations/useDeclarations";
-import NoDeclaration from "../components/NoDeclaration";
+import { ErrorFetchingDeclaration } from "./error pages/ErrorFetchingDeclaration";
 import { useState } from "react";
-import NewDeclarationButton from "../ui/newDeclarationButton";
-import Button from "../ui/Button";
+import NewDeclarationButton from "../ui (custom)/newDeclarationButton";
+import Button from "../ui (custom)/Button";
 import { FileText } from "lucide-react";
+import TopBar from "../components/TopBar";
 
 function Dashboard() {
-  const { declarations } = useDeclarations();
+  const { declarations, isLoading, error } = useDeclarations();
   const [filterCriteria, setfilterCriteria] = useState("All Status");
 
   const declarationFiltered =
@@ -19,22 +19,31 @@ function Dashboard() {
           (declaration) => declaration.status === filterCriteria.toLowerCase()
         );
 
-  if (declarations.length === 0) {
+  if (isLoading) {
     return (
       <>
-        <Top_bar />
-        <NoDeclaration />
+        <TopBar />
+        <div className="flex justify-center items-center h-screen">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500" />
+        </div>
+      </>
+    );
+  } else if (error) {
+    return (
+      <>
+        <TopBar />
+        <ErrorFetchingDeclaration />
       </>
     );
   } else {
     return (
       <main>
-        <Top_bar />
+        <TopBar />
         <div className="flex gap-5 mt-8 ml-5">
           <NewDeclarationButton />
           <Button btnHead="View All Declarations" icon={FileText} link="/" />
         </div>
-        <Card_parent declarations={declarations} />
+        <CardParent declarations={declarations} />
         <All_declarations
           declarations={declarationFiltered}
           setfilterCriteria={setfilterCriteria}
