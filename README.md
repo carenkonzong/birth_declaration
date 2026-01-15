@@ -190,3 +190,18 @@ The next improvements I am focusing on are features that introduce real-world co
 - Portfolio: -
 
 ---
+
+### About This Project
+
+I built this project to practice designing a structured, form-heavy application similar to what is commonly found in government or enterprise systems.
+
+The focus was on:
+
+- managing complex form state
+
+- keeping data models explicit and type-safe
+
+- organizing a React codebase for readability and maintainability
+
+This is a demonstration project. Data is stored locally using JSON Server and resets on server restart.
+A production version would require authentication, a real database, server-side validation, and compliance with privacy regulations.
