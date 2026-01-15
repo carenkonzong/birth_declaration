@@ -32,3 +32,21 @@ Birth registration is a critical administrative process, but traditional systems
 - **Custom Hooks**: Encapsulated business logic in `useDeclarations` hook for cleaner component code
 - **Routing**: React Router v7 with dynamic routes for declaration details
 - **Modern Styling**: Tailwind CSS v4 with custom gradient designs and smooth animations
+
+## Tech Stack
+
+### Frontend
+
+- **React 19** - Latest React features including improved server components support
+- **TypeScript 5.9** - Static typing for enhanced code reliability
+- **Vite** - Lightning-fast build tool and dev server
+- **React Router v7** - Client-side routing with nested layouts
+- **React Hook Form** - Performant forms with minimal re-renders
+- **Yup** - Schema-based form validation
+
+### UI/UX
+
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **Radix UI** - Unstyled, accessible component primitives (Dialog, Popover)
+- **Lucide React** - Beautiful, consistent icon system
+- **Custom Components** - Built using shadcn/ui patterns for consistency
