@@ -1,12 +1,14 @@
 import { ArrowLeft, Send, Save } from "lucide-react";
 import Heading from "../components/Heading";
-import Button from "../ui/Button";
+import Button from "../ui (custom)/Button";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import type { Declaration } from "@/types/Declaration";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { create } from "../services/index";
 import { useState } from "react";
+import { SubmissionSuccessPage } from "./SubmissionSuccessPage";
+import TopBar from "@/components/TopBar";
 
 const REQUIRED_FIELD = "This Field is required";
 const schema = yup
@@ -52,7 +54,7 @@ const schema = yup
   })
   .required();
 
-function New_declaration_page2() {
+function NewDeclarationPage() {
   const {
     register,
     handleSubmit,
@@ -63,11 +65,12 @@ function New_declaration_page2() {
   });
 
   const [display, setDisplay] = useState("FORM");
+  /* const [error, setError] = useState<string | null>(null); */
 
   const onSubmit: SubmitHandler<Declaration> = async (data) => {
     const response = await create("declarations", data);
 
-    if (response.status === 201 || 200) {
+    if (response.ok) {
       reset();
       setDisplay("COMPLETED");
     }
@@ -423,13 +426,12 @@ function New_declaration_page2() {
       ) : null}
       {display === "COMPLETED" ? (
         <>
-          <section>
-            <h1>Form completed successfully</h1>
-          </section>
+          <TopBar />
+          <SubmissionSuccessPage />
         </>
       ) : null}
     </>
   );
 }
 
-export default New_declaration_page2;
+export default NewDeclarationPage;
