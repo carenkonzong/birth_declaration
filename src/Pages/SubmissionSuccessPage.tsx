@@ -82,7 +82,7 @@ export function SubmissionSuccessPage({
                 onClick={onViewDetails}
                 disabled={!onViewDetails}
                 className="inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-white
-                           bg-gradient-to-r from-blue-500 to-emerald-400 hover:opacity-95 transition disabled:opacity-50"
+                           bg-linear-to-r from-blue-500 to-emerald-400 hover:opacity-95 transition disabled:opacity-50"
               >
                 <FileText className="h-4 w-4" />
                 View details
