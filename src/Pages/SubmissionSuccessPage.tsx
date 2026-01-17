@@ -1,10 +1,10 @@
 import { CheckCircle2, FileText, ArrowLeft, Plus } from "lucide-react";
 
 type ConfirmationProps = {
-  declarationId?: string; // e.g. "DCL-10005"
-  childFullName?: string; // e.g. "Ava Patel"
+  declarationId?: string;
+  childFullName?: string;
   status?: "pending" | "approved" | "draft";
-  submittedAt?: string; // e.g. "15/01/2026"
+  submittedAt?: string;
   onViewDetails?: () => void;
   onBackToDashboard?: () => void;
   onCreateAnother?: () => void;
@@ -27,13 +27,10 @@ export function SubmissionSuccessPage({
 }: ConfirmationProps) {
   return (
     <div className="w-full px-5 mt-10">
-      {/* Page container like your main content area */}
       <div className="rounded-2xl border border-gray-200 bg-white shadow-sm">
         <div className="px-6 py-10 sm:px-10 sm:py-12">
-          {/* Header */}
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-start gap-4">
-              {/* Icon bubble */}
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50">
                 <CheckCircle2 className="h-7 w-7 text-emerald-600" />
               </div>
@@ -46,7 +43,6 @@ export function SubmissionSuccessPage({
                   Your declaration has been received and is now being processed.
                 </p>
 
-                {/* Status pill like your list pills */}
                 <div className="mt-3 inline-flex items-center gap-2">
                   <span
                     className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold ${
@@ -65,7 +61,6 @@ export function SubmissionSuccessPage({
               </div>
             </div>
 
-            {/* Primary actions (right side) */}
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <button
                 type="button"
@@ -90,7 +85,6 @@ export function SubmissionSuccessPage({
             </div>
           </div>
 
-          {/* Details card (looks like your declaration cards) */}
           <div className="mt-8 rounded-2xl border border-gray-200 bg-white">
             <div className="px-6 py-6">
               <h2 className="text-lg font-bold text-gray-900">
@@ -129,7 +123,6 @@ export function SubmissionSuccessPage({
             </div>
           </div>
 
-          {/* Secondary CTA */}
           <div className="mt-6 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-gray-500">
               Need to submit another declaration?
