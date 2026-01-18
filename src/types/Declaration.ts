@@ -1,4 +1,4 @@
-import type { Profile, parentProfile, declarantProfile } from "./Profile";
+import type { Profile, ParentProfile, DeclarantProfile } from "./Profile";
 
 export type Declaration = {
   id?: string;
@@ -6,7 +6,7 @@ export type Declaration = {
   status: string;
   declarationId?: string;
   child: Profile;
-  father: parentProfile;
-  mother: parentProfile;
-  declarant: declarantProfile;
+  father: ParentProfile;
+  mother: ParentProfile;
+  declarant: DeclarantProfile;
 };
