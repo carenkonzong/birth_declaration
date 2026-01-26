@@ -65,15 +65,15 @@ function NewDeclarationPage() {
   });
 
   const [display, setDisplay] = useState("FORM");
-  /* const [error, setError] = useState<string | null>(null); */
 
   const onSubmit: SubmitHandler<Declaration> = async (data) => {
-    const response = await create("declarations", data);
-
-    if (response.ok) {
-      reset();
-      setDisplay("COMPLETED");
-    }
+    try {
+      const response = await create("declarations", data);
+      if (response.ok) {
+        reset();
+        setDisplay("COMPLETED");
+      }
+    } catch (error) {}
   };
 
   return (
