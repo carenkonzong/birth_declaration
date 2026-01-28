@@ -234,7 +234,7 @@ function NewDeclarationPage() {
                     />
 
                     <span className="text-red-400 text-xs">
-                      {errors.father?.nationality?.message}
+                      {errors.father?.nationalId?.message}
                     </span>
                   </div>
                   <div className="mt-5">
