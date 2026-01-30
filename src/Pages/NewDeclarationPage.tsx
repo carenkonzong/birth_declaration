@@ -9,6 +9,7 @@ import { create } from "../services/index";
 import { useState } from "react";
 import { SubmissionSuccessPage } from "./SubmissionSuccessPage";
 import TopBar from "@/components/TopBar";
+import { toast } from "sonner";
 
 const REQUIRED_FIELD = "This Field is required";
 const schema = yup
@@ -69,10 +70,11 @@ function NewDeclarationPage() {
   const onSubmit: SubmitHandler<Declaration> = async (data) => {
     try {
       const response = await create("declarations", data);
-      if (response.ok) {
-        reset();
-        setDisplay("COMPLETED");
+      if (!response.ok) {
+        throw new Error();
       }
+      reset();
+      setDisplay("COMPLETED");
     } catch (error) {}
   };
 
@@ -300,7 +302,7 @@ function NewDeclarationPage() {
                     />
 
                     <span className="text-red-400 text-xs">
-                      {errors.mother?.nationality?.message}
+                      {errors.mother?.nationalId?.message}
                     </span>
                   </div>
                   <div className="mt-5">
