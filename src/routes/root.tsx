@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Sidebar from "../components/Sidebar";
+import { Toaster } from "@/components/ui/sonner";
 
 function root() {
   return (
@@ -9,6 +10,7 @@ function root() {
       <div className="ml-65">
         <Outlet />
       </div>
+      <Toaster />
     </div>
   );
 }
